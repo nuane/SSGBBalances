@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGB_Taxes_cp -->
+<!-- Author: michael -->
+<!-- DateCreated: 4/16/2023 1:19:38 PM -->
+<GameData>
+
+	<Types>
+		<Row Type="PROJECT_MAKETAX" Kind="KIND_PROJECT"/>
+		<Row Type="PROJECT_KILLTAX" Kind="KIND_PROJECT"/>
+	</Types>
+	<Projects>
+		<Row ProjectType="PROJECT_MAKETAX" Name="PROJECT_MAKETAX" ShortName="Placeholder" Description="Placeholder" PrereqCivic="CIVIC_FEUDALISM" RequiredBuilding="BUILDING_TAXFREE" Cost="500" AdvisorType="ADVISOR_GENERIC"/>
+		<Row ProjectType="PROJECT_KILLTAX" Name="PROJECT_KILLTAX" ShortName="Placeholder" Description="Placeholder" PrereqCivic="CIVIC_FEUDALISM" RequiredBuilding="BUILDING_TAX_A" Cost="500" AdvisorType="ADVISOR_GENERIC"/>
+
+	</Projects>
+
+	
+	<Projects_XP2>
+		<Row ProjectType="PROJECT_MAKETAX" CreateBuilding="BUILDING_TAX_A"/>
+		<Row ProjectType="PROJECT_KILLTAX" CreateBuilding="BUILDING_TAXFREE"/>
+	</Projects_XP2>
+	
+	<Project_BuildingCosts>
+		<Row ProjectType="PROJECT_MAKETAX" ConsumedBuildingType="BUILDING_TAXFREE"/>
+		<Row ProjectType="PROJECT_KILLTAX" ConsumedBuildingType="BUILDING_TAX_A"/>
+		<Row ProjectType="PROJECT_KILLTAX" ConsumedBuildingType="BUILDING_TAX_B"/>
+		<Row ProjectType="PROJECT_KILLTAX" ConsumedBuildingType="BUILDING_TAX_C"/>
+	</Project_BuildingCosts>
+	<ProjectCompletionModifiers>
+		<Row ProjectType="PROJECT_HORSES" ModifierId="SSGB_PROJECT_COMPLETION_SCIENCE_VP"/>
+
+		<Row ProjectType="PROJECT_COAL" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE"/>
+		<Row ProjectType="PROJECT_OIL" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE"/>
+		<Row ProjectType="PROJECT_QE" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_FAITH_RATE"/>
+	</ProjectCompletionModifiers>
+
+	
+</GameData>

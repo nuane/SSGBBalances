@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData1 -->
+<!-- Author: michael -->
+<!-- DateCreated: 9/8/2022 12:46:37 AM -->
+<GameInfo>
+	<IconDefinitions>
+		<Row Name="ICON_BUILDING_STATUE" Atlas="ICON_ATLAS_WONDERS" Index="27"/>
+		<Row Name="ICON_BUILDING_COURTHOUSE" Atlas="ICON_ATLAS_WONDERS_FOW" Index="8"/>
+
+		<Row Name="ICON_BUILDING_RESERVOIR" Atlas="ICON_ATLAS_BUILDINGS" Index="13"/>
+		<Row Name="ICON_BUILDING_FOUNTAIN" Atlas="ICON_ATLAS_BUILDINGS" Index="1"/>
+		<Row Name="ICON_BUILDING_GARDEN" Atlas="ICON_ATLAS_BUILDINGS" Index="46"/>
+		<Row Name="ICON_BUILDING_WATER_TREATMENT_FACILITY" Atlas="ICON_ATLAS_BUILDINGS" Index="40"/>
+		
+		<Row Name="ICON_BUILDING_AQUACULTURE_FARM" Atlas="ICON_ATLAS_WONDERS" Index="1"/>
+
+		<Row Name="ICON_BUILDING_HEROIC_EPIC" Atlas="ICON_ATLAS_BUILDINGS" Index="0"/>
+		<Row Name="ICON_BUILDING_CIRCUS_MAXIMUS" Atlas="ICON_ATLAS_WONDERS" Index="7"/>
+		<Row Name="ICON_BUILDING_IRONWORKS" Atlas="ICON_ATLAS_WONDERS" Index="13"/>
+		<Row Name="ICON_BUILDING_STEELWORKS" Atlas="ICON_ATLAS_WONDERS" Index="13"/>
+		<Row Name="ICON_BUILDING_CENTRAL_BANK" Atlas="ICON_ATLAS_WONDERS" Index="16"/>
+	</IconDefinitions>
+</GameInfo>

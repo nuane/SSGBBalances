@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData1 -->
+<!-- Author: michael -->
+<!-- DateCreated: 3/19/2023 8:23:02 PM -->
+<GameData>
+	<Types>
+		<Row Type="HAPPINESS_WELOVETHEKING" Kind="KIND_HAPPINESS"/>
+	</Types>
+	<Happinesses>
+		<Row HappinessType="HAPPINESS_WELOVETHEKING" Name="SSGB_LOC_HAPINESS_WELOVETHEKING_NAME" MinimumAmenityScore="10" GrowthModifier="100" NonFoodYieldModifier="50" RebellionPoints="-1"/>
+	</Happinesses>
+	<Happinesses_XP1>
+		<Row HappinessType="HAPPINESS_WELOVETHEKING" IdentityPerTurnChange="40"/>
+	</Happinesses_XP1>
+</GameData>

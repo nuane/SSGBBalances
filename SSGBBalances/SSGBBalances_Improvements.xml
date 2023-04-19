@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGBBalances_Improvements -->
+<!-- Author: michael -->
+<!-- DateCreated: 9/14/2022 3:36:42 PM -->
+<GameData>
+	<!-- hELLA buff farms by giving them mad adjacency bonuses through civics and techs-->
+	<!-- TODO farm buffs are overwhelming and can be simplified-->
+	<Improvement_Adjacencies>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_Buttress_Adjacent_River_Food"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_Pasture_HorsebackRiding_Adjacent_Production"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_Quarry_Engineering_Adjacent_Production"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_Plantation_Economics_Adjacent_Production"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_Plantation_Plastics_Adjacent_Production"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_CivilEngineering_Adjacent_Food"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_Rapid_Deployment_Adjacent_Food"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Farms_Conservation_Adjacent_Food"/>
+
+		<Row ImprovementType="IMPROVEMENT_LUMBER_MILL" YieldChangeId="SSGB_LumberMill_River_Production"/>
+		<Row ImprovementType="IMPROVEMENT_WIND_FARM" YieldChangeId="Farms_Environmentalism_Adjacent_Food"/>
+		<Row ImprovementType="IMPROVEMENT_SOLAR_FARM" YieldChangeId="SSGB_SOLAR_ADJACENCY_PRODUCTION"/>
+	</Improvement_Adjacencies>
+
+	<Improvement_BonusYieldChanges>
+		<Row Id="333" ImprovementType="IMPROVEMENT_FARM" YieldType="YIELD_FOOD" BonusYieldChange="1" PrereqTech="TECH_MACHINERY"/>
+		<Row Id="334" ImprovementType="IMPROVEMENT_FARM" YieldType="YIELD_FOOD" BonusYieldChange="1" PrereqTech="TECH_COMBUSTION"/>
+		<Row Id="335" ImprovementType="IMPROVEMENT_FARM" YieldType="YIELD_FOOD" BonusYieldChange="1" PrereqTech="TECH_PLASTICS"/>
+		<Row Id="336" ImprovementType="IMPROVEMENT_FARM" YieldType="YIELD_FOOD" BonusYieldChange="2" PrereqTech="TECH_COMPOSITES"/>
+		<!-- plantations get a buff -->
+		<Row Id="337" ImprovementType="IMPROVEMENT_PLANTATION" YieldType="YIELD_GOLD" BonusYieldChange="3" PrereqTech="TECH_BANKING"/>
+		<Row Id="338" ImprovementType="IMPROVEMENT_PLANTATION" YieldType="YIELD_FOOD" BonusYieldChange="3" PrereqTech="TECH_REPLACEABLE_PARTS"/>
+		<!-- quarries have a good use especially in the early-mid game -->
+		<Row Id="339" ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_PRODUCTION" BonusYieldChange="1" PrereqTech="TECH_MASONRY"/>
+		<Row Id="340" ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_PRODUCTION" BonusYieldChange="1" PrereqTech="TECH_CONSTRUCTION"/>
+		<!-- idk... ppl like to hunt -->
+		<Row Id="341" ImprovementType="IMPROVEMENT_CAMP" YieldType="YIELD_PRODUCTION" BonusYieldChange="1" PrereqTech="TECH_RIFLING"/>
+		<Row Id="342" ImprovementType="IMPROVEMENT_MINE" YieldType="YIELD_PRODUCTION" BonusYieldChange="1" PrereqTech="TECH_CHEMISTRY"/>
+	</Improvement_BonusYieldChanges>
+			
+	<Adjacency_YieldChanges>
+		<!--Tech-->
+		<Row ID="Farms_Buttress_Adjacent_River_Food" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="1" AdjacentRiver="true" PrereqTech="TECH_BUTTRESS"/>
+		<Row ID="Farms_Pasture_HorsebackRiding_Adjacent_Production" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_PASTURE" PrereqTech="TECH_HORSEBACK_RIDING"/>
+		<Row ID="Farms_Quarry_Engineering_Adjacent_Production" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_QUARRY" PrereqTech="TECH_ENGINEERING"/>
+		<Row ID="Farms_Plantation_Economics_Adjacent_Production" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_PLANTATION" PrereqTech="TECH_ECONOMICS"/>
+		<Row ID="Farms_Plantation_Plastics_Adjacent_Production" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_PLANTATION" PrereqTech="TECH_PLASTICS"/>
+		
+		<Row ID="SSGB_LumberMill_River_Production" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentRiver="true" PrereqTech="TECH_INDUSTRIALIZATION"/>
+		<!--Civics-->
+		<Row ID="Farms_CivilEngineering_Adjacent_Food" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_FARM" PrereqCivic="CIVIC_CIVIL_ENGINEERING"/>
+		<Row ID="Farms_Rapid_Deployment_Adjacent_Food" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_FARM" PrereqCivic="CIVIC_RAPID_DEPLOYMENT"/>
+		<Row ID="Farms_Conservation_Adjacent_Food" Description="Placeholder" YieldType="YIELD_GOLD" YieldChange="3" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_FARM" PrereqCivic="CIVIC_CONSERVATION"/>
+
+		<!--Renewable energy improvements have adjacency bonuses and such...-->
+		<Row ID="Farms_Environmentalism_Adjacent_Food" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="7" TilesRequired="3" AdjacentImprovement="IMPROVEMENT_WIND_FARM" PrereqCivic="CIVIC_ENVIRONMENTALISM"/>
+		<Row ID="SSGB_SOLAR_ADJACENCY_PRODUCTION" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="7" TilesRequired="3" AdjacentImprovement="IMPROVEMENT_SOLAR_FARM" PrereqCivic="CIVIC_ENVIRONMENTALISM"/>
+	</Adjacency_YieldChanges>
+
+
+	<!--Modifiers>
+		<Row>
+			<ModifierId>SOLAR_FARM_GENERATE_POWER</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_POWER</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>SOLAR_FARM_GENERATE_POWER</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>SOLAR_FARM_GENERATE_POWER</ModifierId>
+			<Name>SourceType</Name>
+			<Value>FREE_POWER_SOURCE_SOLAR</Value>
+		</Row>
+	</ModifierArguments>
+	
+	<ImprovementModifiers>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SOLAR_FARM</ImprovementType>
+			<ModifierId>SOLAR_FARM_GENERATE_POWER</ModifierId>
+		</Row>
+	</ImprovementModifiers>
+	-->
+</GameData>

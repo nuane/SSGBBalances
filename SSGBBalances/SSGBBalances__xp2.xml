@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGBBalances__Units_xp1 -->
+<!-- Author: michael -->
+<!-- DateCreated: 9/17/2022 10:59:44 AM -->
+<GameData>
+	<Governments>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_AUTOCRACY"/>
+			<Set>
+				<OtherGovernmentIntolerance>-25</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_OLIGARCHY"/>
+			<Set>
+				<OtherGovernmentIntolerance>-25</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_CLASSICAL_REPUBLIC"/>
+			<Set>
+				<OtherGovernmentIntolerance>-10</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_MONARCHY"/>
+			<Set>
+				<OtherGovernmentIntolerance>-10</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_THEOCRACY"/>
+			<Set>
+				<OtherGovernmentIntolerance>5</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_MERCHANT_REPUBLIC"/>
+			<Set>
+				<OtherGovernmentIntolerance>-5</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_FASCISM"/>
+			<Set>
+				<OtherGovernmentIntolerance>0</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_COMMUNISM"/>
+			<Set>
+				<OtherGovernmentIntolerance>10</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_DEMOCRACY"/>
+			<Set>
+				<OtherGovernmentIntolerance>10</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_CORPORATE_LIBERTARIANISM"/>
+			<Set>
+				<OtherGovernmentIntolerance>15</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_SYNTHETIC_TECHNOCRACY"/>
+			<Set>
+				<OtherGovernmentIntolerance>-5</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+		<Update>
+			<Where GovernmentType="GOVERNMENT_DIGITAL_DEMOCRACY"/>
+			<Set>
+				<OtherGovernmentIntolerance>25</OtherGovernmentIntolerance>
+			</Set>
+		</Update>
+	</Governments>
+
+	<Units>
+		<Update>
+			<Where UnitType="UNIT_IRONCLAD"/>
+			<Set>
+				<StrategicResource>RESOURCE_IRON</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_DESTROYER"/>
+			<Set>
+				<BaseMoves>7</BaseMoves>   <!--4-->
+				<StrategicResource>RESOURCE_IRON</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BATTLESHIP"/>
+			<Set>
+				<StrategicResource>RESOURCE_IRON</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BIPLANE"/>
+			<Set>
+				<StrategicResource>RESOURCE_COAL</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_TANK"/>
+			<Set>
+				<StrategicResource>RESOURCE_IRON</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_MODERN_ARMOR"/>
+			<Set>
+				<StrategicResource>RESOURCE_IRON</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_INFANTRY"/>
+			<Set>
+				<StrategicResource>RESOURCE_COAL</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BOMBARD"/>
+			<Set>
+				<StrategicResource>RESOURCE_IRON</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_ARTILLERY"/>
+			<Set>
+				<StrategicResource>RESOURCE_IRON</StrategicResource>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_ROCKET_ARTILLERY"/>
+			<Set>
+				<StrategicResource>RESOURCE_ALUMINUM</StrategicResource>
+			</Set>
+		</Update>
+		
+		<Update>
+			<Where UnitType="UNIT_SUPPLY_CONVOY"/>
+			<Set>
+				<PrereqTech>TECH_BALLISTICS</PrereqTech>
+				<Cost>225</Cost>
+			</Set>
+		</Update>
+	</Units>
+	<Units_XP2>
+		<Update>
+			<Where UnitType="UNIT_IRONCLAD"/>
+			<Set>
+				<ResourceCost>40</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BIPLANE"/>
+			<Set>
+				<ResourceCost>10</ResourceCost>
+				<ResourceMaintenanceType>RESOURCE_NITER</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>1</ResourceMaintenanceAmount>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_FIGHTER"/>
+			<Set>
+				<ResourceCost>20</ResourceCost>
+				<ResourceMaintenanceType>RESOURCE_OIL</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>1</ResourceMaintenanceAmount>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BOMBER"/>
+			<Set>
+				<ResourceCost>30</ResourceCost>
+				<ResourceMaintenanceType>RESOURCE_OIL</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>1</ResourceMaintenanceAmount>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_JET_FIGHTER"/>
+			<Set>
+				<ResourceCost>30</ResourceCost>
+				<ResourceMaintenanceType>RESOURCE_OIL</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>1</ResourceMaintenanceAmount>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_JET_BOMBER"/>
+			<Set>
+				<ResourceCost>40</ResourceCost>
+				<ResourceMaintenanceType>RESOURCE_OIL</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>1</ResourceMaintenanceAmount>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_SWORDSMAN"/>
+			<Set>
+				<ResourceCost>10</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_ROMAN_LEGION"/>
+			<Set>
+				<ResourceCost>5</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_KONGO_SHIELD_BEARER"/>
+			<Set>
+				<ResourceCost>2</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_KNIGHT"/>
+			<Set>
+				<ResourceMaintenanceType>RESOURCE_HORSES</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>1</ResourceMaintenanceAmount>
+				<ResourceCost>10</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_CUIRASSIER"/>
+			<Set>
+				<ResourceMaintenanceType>RESOURCE_HORSES</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>2</ResourceMaintenanceAmount>
+				<ResourceCost>20</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_TANK"/>
+			<Set>
+				<ResourceCost>20</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_MODERN_ARMOR"/>
+			<Set>
+				<ResourceCost>40</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_INFANTRY"/>
+			<Set>
+				<ResourceMaintenanceType>RESOURCE_NITER</ResourceMaintenanceType>
+				<ResourceCost>10</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BOMBARD"/>
+			<Set>
+				<ResourceMaintenanceType>RESOURCE_NITER</ResourceMaintenanceType>
+				<ResourceMaintenanceAmount>1</ResourceMaintenanceAmount>
+				<ResourceCost>10</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_ARTILLERY"/>
+			<Set>
+				<ResourceCost>20</ResourceCost>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_ROCKET_ARTILLERY"/>
+			<Set>
+				<ResourceCost>20</ResourceCost>
+			</Set>
+		</Update>
+	</Units_XP2>
+</GameData>

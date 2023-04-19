@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+	<BaseGameText>
+
+		<!-- U N I T S -->
+		<Row Tag="SSGB_UNIT_SPEARMAN_DESCRIPTION">
+			<Text>Ancient era anti-cavalry unit. Melee conscription unit. Reduces city's [ICON_Citizen] Population by 1 when completed.</Text>
+		</Row>
+
+		<!-- hAPPY H A P I N E S S -->
+		<Row Tag="SSGB_LOC_HAPPINESS_WELOVETHEKING_NAME">
+			<Text>!We Love The King!</Text>
+		</Row>
+
+		<!-- P R O J E C T S -->
+		<Row Tag="SSGB_LOC_PROJECT_QUANTATIVE_EASING_NAME">
+			<Text>Quantative Easing</Text>
+		</Row>
+		<Row Tag="LOC_PROJECT_SSGB_LOC_PROJECT_QUANTATIVE_EASING_SHORT_NAME">
+			<Text>Q E</Text>
+		</Row>
+		<Row Tag="LOC_PROJECT_SSGB_LOC_PROJECT_QUANTATIVE_EASING_DESCRIPTION">
+			<Text>Something something Quantative Easing dark side</Text>
+		</Row>
+
+
+		<!-- B U I L D I N G S 
+		
+			<Row Tag="SSGB_LOC_BUILDING_TAX_A_NAME">
+				<Text>Make Tax A</Text>
+			</Row>
+			<Row Tag="SSGB_LOC_BUILDING_TAX_A_DESCRIPTION">
+				<Text>High-maintaince, low-cost building that does stuff. And it gives you GOLD!</Text>
+			</Row>
+			<Row Tag="SSGB_LOC_BUILDING_TAX_B_NAME">
+				<Text>Make Tax B</Text>
+			</Row>
+			<Row Tag="SSGB_LOC_BUILDING_TAX_B_DESCRIPTION">
+				<Text>High-maintaince, low-cost building that does stuff. And it gives you GOLD!</Text>
+			</Row>
+			<Row Tag="SSGB_LOC_BUILDING_TAX_C_NAME">
+				<Text>Make Tax C</Text>
+			</Row>
+			<Row Tag="SSGB_LOC_BUILDING_TAX_C_DESCRIPTION">
+				<Text>High-maintaince, low-cost building that does stuff. And it gives you GOLD!</Text>
+			</Row>
+			<Row Tag="SSGB_LOC_BUILDING_TAXFREE_NAME">
+				<Text>Kill Tax</Text>
+			</Row>
+			<Row Tag="SSGB_LOC_BUILDING_TAXFREE_DESCRIPTION">
+				<Text>Revoke taxes (or make it seem like that) for extra Amenities. You pay 30 gold/turn though ;/ </Text>
+			</Row>
+		
+		
+		-->
+		<!-- Update text for current buildings-->
+		<Row Tag="SSGB_LOC_ARENA_DESCRIPTION">
+			<Text>Provides 1  Tourism after advancing to the Conservation Civic. Provides +1 [ICON_CULTURE] Culture to each Rainforest tile in this city.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BROADCAST_CENTER_DESCRIPTION">
+			<Text>Provides +3 [ICON_SCIENCE] Science to each Rainforest tile in this city.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_RESEARCH_LAB_DESCRIPTION">
+			<Text>Provides +5 [ICON_GOLD] Gold to each Rainforest tile in this city.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BARRACKS_DESCRIPTION">
+			<Text>Provides +2 [ICON_PRODUCTION] Production to each Camp improvement in this city.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_STABLE_DESCRIPTION">
+			<Text>Provides +1 [ICON_FOOD] Food to each Pasture improvement in this city.</Text>
+		</Row>
+		<!-- N A T I O N A L  W O N D E R S-->
+		<Row Tag="SSGB_LOC_BUILDING_HEROIC_EPIC_NAME">
+			<Text>Heroic Epic</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_HEROIC_EPIC_DESCRIPTION">
+			<Text>+2 cog, culture, general, writing slots/points</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_HEROIC_EPIC_CHAPTER_HISTORY_PARA_1">
+			<Text>CivV Civilepdia: From ancient times, a heroic epic is a poem that defines a people or an era, and is usually centered upon the heroic actions of one or more people. The Greek Odyssey is such a work, as are the Mesopotamian Epic of Gilgamesh and the Anglo-Saxon Beowulf.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_NATIONAL_LIBRARY_NAME">
+			<Text>National Library</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_NATIONAL_LIBRARY_DESCRIPTION">
+			<Text>The national library is either an OP early game building or an ok mid-game building for science</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_NATIONAL_LIBRARY_CHAPTER_HISTORY_PARA_1">
+			<Text>CivV Civilepdia: From ancient times, a heroic epic is a poem that defines a people or an era, and is usually centered upon the heroic actions of one or more people. The Greek Odyssey is such a work, as are the Mesopotamian Epic of Gilgamesh and the Anglo-Saxon Beowulf.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_CIRCUS_MAXIMUS_NAME">
+			<Text>Circus Maximus</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_CIRCUS_MAXIMUS_DESCRIPTION">
+			<Text>Placeholder in case I need to describe buildings special abilities or unique traits</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_CIRCUS_MAXIMUS_CHAPTER_HISTORY_PARA_1">
+			<Text>CivV Civilepdia: A massive stadium located in the heart of Rome, the Circus Maximus was the first, and largest, chariot racing venue in ancient Rome. At the time of its usage, it could hold over a quarter of a million people, over 25% of the city's population. Measuring over 500 meters (2000 ft) in length, twelve full-sized chariots could easily race side by side. Originally used by the Etruscan kings to host their entertainments and festivals, the first Roman Games were held at the racetrack by the fifth Roman King, Tarquinius Priscus. The site was later expanded by Julius Caesar in 50 BC to its current size.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_PUBLIC_BATHHOUSE_NAME">
+			<Text>Public Bathhouse</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_PUBLIC_BATHHOUSE_DESCRIPTION">
+			<Text>Placeholder in case I need to describe buildings special abilities or unique traits</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_PUBLIC_BATHHOUSE_CHAPTER_HISTORY_PARA_1">
+			<Text>CivV Civilepdia: A massive stadium located in the heart of Rome, the Circus Maximus was the first, and largest, chariot racing venue in ancient Rome. At the time of its usage, it could hold over a quarter of a million people, over 25% of the city's population. Measuring over 500 meters (2000 ft) in length, twelve full-sized chariots could easily race side by side. Originally used by the Etruscan kings to host their entertainments and festivals, the first Roman Games were held at the racetrack by the fifth Roman King, Tarquinius Priscus. The site was later expanded by Julius Caesar in 50 BC to its current size.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_IRONWORKS_NAME">
+			<Text>Ironworks</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_IRONWORKS_DESCRIPTION">
+			<Text>Only 2 Ironworks can be built in each empire. Requires city to have an Armory and an Industrial Zone that's built next to an Iron resource</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_IRONWORKS_CHAPTER_HISTORY_PARA_1">
+			<Text>An Ironworks is where iron is smelted at an industrial scale using a blast furnace. Ironworks succeeded bloomeries when blast furnaces replaced former methods. An integrated ironworks in the 19th century usually included one or more blast furnaces and a number of puddling furnaces or a foundry with or without other kinds of ironworks. The earliest cast iron in China dates to the 8th century BC and pre-dates the earliest European evidence by about two millennia.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_IRONWORKS_CHAPTER_HISTORY_PARA_2">
+			<Text>After the invention of the Bessemer process, converters became widespread, and the appellation steelworks replaced ironworks. The processes carried at ironworks Steelers are usually described as ferrous metallurgy, but the term siderurgy is also occasionally used. This is derived from the Greek words sideros - iron and ergon or ergos - work. This is an unusual term in English, and it is best regarded as an anglicisation of a term used in French, Spanish, and other Romance languages.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_STEELWORKS_NAME">
+			<Text>Steelworks</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_STEELWORKS_DESCRIPTION">
+			<Text>Only 1 STEELWORKS can be built in each empire. Requires city to have an Armory and an Industrial Zone that's built next to an Iron resource</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_STEELWORKS_CHAPTER_HISTORY_PARA_1">
+			<Text>naces replaced former methods. An integrated STEELWORKS in the 19th centuryby about two millennia.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_STEELWORKS_CHAPTER_HISTORY_PARA_2">
+			<Text>After the invention of the Bessemer process, converters became widespread, and the appellation steelworks replaced ironworks. The processes carried at ironworks Steelers are usually described as ferrous metallurgy, but the term siderurgy is also occasionally used. This is derived from the Greek words sideros - iron and ergon or ergos - work. This is an unusual term in English, and it is best regarded as an anglicisation of a term used in French, Spanish, and other Romance languages.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_CENTRAL_BANK_NAME">
+			<Text>Central Bank</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_CENTRAL_BANK_DESCRIPTION">
+			<Text>Placeholder in case I need to describe buildings special abilities or unique traits</Text>
+		</Row>
+		
+		<!-- NEW    B U I L D I N G S    NEW-->
+		<Row Tag="SSGB_LOC_BUILDING_STATUE_NAME">
+			<Text>Statue</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_STATUE_DESCRIPTION">
+			<Text>Provides +1 loyalty per turn in this city. If the city is at full-loyalty, provides an additional 2 Faith [ICON_FAITH]. Earns +1 [ICON_CULTURE] for each era since constructed or repaired</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_STATUE_CHAPTER_HISTORY_PARA_1">
+			<Text>As soon as humans began to settle down to build farms, granaries, shrines... Other humans came to “conquer” their peers, placing a statue of their leader, god, or both as a way to cement their budding empires foundation. As soon as kings created vast empires, they built statues like the Sphinxes in Egypt or the Terracotta Army in China. But perhaps the most famous statue, isn't even a statue at all, but a poem about Ramses II by Percy Bysshe Shelley— Ozymandias: </Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_STATUE_CHAPTER_HISTORY_PARA_2">
+			<Text>
+				And on the pedestal, these words appear: / My name is Ozymandias, King of Kings; / Look on my Works, ye Mighty, and despair! / Nothing beside remains. Round the decay / Of that colossal Wreck, boundless and bare / The lone and level sands stretch far away.”
+			</Text>
+		</Row>
+		
+		<Row Tag="SSGB_LOC_BUILDING_COURTHOUSE_NAME">
+			<Text>Courthouse</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_COURTHOUSE_DESCRIPTION">
+			<Text>Provides +1 [ICON_HOUSING] Housing, +1 [ICON_AMENITIES], and +8 Loyalty per turn (Other effects) in this city. If the city is at full-loyalty, provides an additional +3 [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_COURTHOUSE_CHAPTER_HISTORY_PARA_1">
+			<Text>Moreso than any other building in a town or city, the courthouse- also called court buildings, palace of justice, or courts- represents the symbolic link between the government and its citizens. The meaning of a judicial assembly is first attested in the 12th century, and derives from the earlier usage to designate a sovereign and his entourage, which met to adjudicate disputes in such an enclosed yard. The verb “to court”, meaning to win favor, derives from the same source since people traveled to the sovereign's court to win his favor.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_HOSPITAL_NAME">
+			<Text>Hospital</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_HOSPITAL_DESCRIPTION">
+			<Text>Provides +5 [ICON_FOOD] Food</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_HOSPITAL_CHAPTER_HISTORY_PARA_1">
+			<Text>Hospitals used to be for poor people who couldn't afford a doctor to come visit them at their home. Today, it represents the pinnacle of industrial medicine for people to be treated of ailments. </Text>
+		</Row>
+		
+		
+		
+		<Row Tag="SSGB_LOC_BUILDING_RESERVOIR_NAME">
+			<Text>Reservoir</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_RESERVOIR_CHAPTER_HISTORY_PARA_1">
+			<Text>A reservoir </Text>
+		</Row>
+		<Row Tag="SSBG_LOC_BUILDING_FOUNTAIN_NAME">
+			<Text>Fountain</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_FOUNTAIN_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSBG_LOC_BUILDING_GARDEN_NAME">
+			<Text>Garden</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_GARDEN_DESCRIPTION">
+			<Text>Provides city 50% [ICON_GREATPERSON] Great People points generated per turn.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GARDEN_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSBG_LOC_BUILDING_WTF_NAME">
+			<Text>Water Treatment Facility</Text>
+		</Row>
+		<Row Tag="SSBG_LOC_BUILDING_WTF_DESCRIPTION">
+			<Text>Lowers food requirement of population by 75%. +1.5 [ICON_FOOD] Food per population.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_WTF_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_AQUACULTURE_NAME">
+			<Text>Aquaculture Farm</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_AQUACULTURE_DESCRIPTION">
+			<Text>Adds +2 [ICON_GOLD] to every farm tile worked by city.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_AQUACULTURE_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_FISH_HATCHERY_NAME">
+			<Text>Fish Hatchery</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_FISH_HATCHERY_DESCRIPTION">
+			<Text>IDK what the fish hatchery does...</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_FISH_HATCHERY_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_HOTEL_NAME">
+			<Text>Hotel</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_HOTEL_DESCRIPTION">
+			<Text>Increases Tourism [ICON_TOURISM] of Artifacts [ICON_GreatWork_Artifact], Sculptures [ICON_GreatWork_Sculpture], Portraits [ICON_GreatWork_Portrait], and Landscapes [ICON_GreatWork_Landscape] by 50% in city</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_HOTEL_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_SKYSCRAPER_NAME">
+			<Text>Skyscraper</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_SKYSCRAPER_DESCRIPTION">
+			<Text>Increases Tourism of Artifacts [ICON_ARTIFACT], Sculptures [ICON_SCULPTURE], Portraits [ICON_PORTRAIT], and Landscapes [ICON_LANDSCAPE] by 50% in city</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_SKYSCRAPER_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		
+		<Row Tag="SSGB_LOC_BUILDING_POST_OFFICE_NAME">
+			<Text>Post Office</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_POST_OFFICE_DESCRIPTION">
+			<Text>IDK what the POST_OFFICE does...</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_POST_OFFICE_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		
+		<Row Tag="SSGB_LOC_BUILDING_AMUSEMENT_PARK_NAME">
+			<Text>Amusement Park</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_AMUSEMENT_PARK_DESCRIPTION">
+			<Text>IDK what the AMUSING PARK does...</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_AMUSEMENT_PARK_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_PRISON_NAME">
+			<Text>Prison</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_PRISON_DESCRIPTION">
+			<Text>IDK what the PRISON does...</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_PRISON_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_WAREHOUSE_NAME">
+			<Text>Warehouse</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_WAREHOUSE_DESCRIPTION">
+			<Text>IDK what the WAREHOUSE does...</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_WAREHOUSE_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_MASS_TRANSIT_NAME">
+			<Text>Mass Transit</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_MASS_TRANSIT_DESCRIPTION">
+			<Text>IDK what the MASS_TRANSIT does...</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_MASS_TRANSIT_CHAPTER_HISTORY_PARA_1">
+			<Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_HIGHWAY_NAME">
+			<Text>Highway</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_BUILDING_HIGHWAY_DESCRIPTION">
+			<Text>IDK what the WAREHOUSE does...</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_HIGHWAY_CHAPTER_HISTORY_PARA_1">
+			<Text>Roger Rabbit plot!... , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+		</Row>
+		
+		<!-- D I S T R I C T S -->
+		<!-- Text for neighborhood adjecency bonus -->
+		<Row Tag="SSGB_LOC_NEIGHBORHOOD_DISTRICT_ADJACENCY_DESCRIPTION">
+			<Text>+Odd numbered [ICON_GOLD] Gold from every other odd {1_Num : plural 1?district; other?districts;}.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_NEIGHBORHOOD_PRESERVE_DESCRIPTION">
+			<Text>+{3_num} [ICON_SCIENCE] Science from the adjacent Preserve {1_Num : plural 1?district; other?districts;}.</Text>
+		</Row>
+		<!-- Text for aerodrome adjecency bonus -->
+		<Row Tag="SSGB_LOC_CITYCENTER_AERODROME_CULTURE_DESCRIPTION">
+			<Text>+{3_num} [ICON_CULTURE] Culture frome adjacent City Center.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_NEIGHBORHOOD_AERODROME_DESCRIPTION">
+			<Text>+{2_num} [ICON_CULTURE] Culture frome adjacent Neighborhood {1_Num : plural 1?district; other?districts;}.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_NATURALWONDER_AERODROME_CULTURE_DESCRIPTION">
+			<Text>+{4_num} [ICON_CULTURE] Culture from the adjacent Natural Wonder {1_Num : plural 1?tile; other?tiles;}.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_GOVT_PLAZA_AERODROME_CULTURE_DESCRIPTION">
+			<Text>+{3_num} [ICON_CULTURE] Culture from the adjacent Government Plaza {1_Num : plural 1?district; other?districts;}.</Text>
+		</Row>
+
+		<!-- Text for added commercial adjecency bonus -->
+		<Row Tag="SSGB_LOC_COMMERCIAL_PLANTATION_GOLD_DESCRIPTION">
+			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent {1_Num : plural 1?Plantation; other?Plantations;}.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_COMMERCIAL_CAMP_GOLD_DESCRIPTION">
+			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent {1_Num : plural 1?Camp; other?Camps;}.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_COMMERCIAL_PASTURE_GOLD_DESCRIPTION">
+			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent {1_Num : plural 1?Pasture; other?Pastures;}.</Text>
+		</Row>
+		<Row Tag="SSGB_LOC_COMMERCIAL_QUARRY_GOLD_DESCRIPTION">
+			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent {1_Num : plural 1?Quarry; other?Quarries;}.</Text>
+		</Row>
+		<!-- Text for added commercial adjecency bonus -->
+		
+	</BaseGameText>
+</GameData>

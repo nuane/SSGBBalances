@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData1 -->
+<!-- Author: michael -->
+<!-- DateCreated: 9/14/2022 1:32:31 PM -->
+
+
+<!-- TODO: update in game text for neighborhoods and aerodromes -->
+
+<GameData>
+	<Districts>
+		<Update>
+			<Where DistrictType="DISTRICT_AQUEDUCT"/>
+			<Set>
+				<RequiresPopulation>true</RequiresPopulation>
+			</Set>
+		</Update>
+		<Update>
+			<Where DistrictType="DISTRICT_NEIGHBORHOOD"/>
+			<Set>
+				<RequiresPopulation>true</RequiresPopulation>
+				<OnePerCity>true</OnePerCity>
+			</Set>
+		</Update>
+		<Update>
+			<Where DistrictType="DISTRICT_DAM"/>
+			<Set>
+				<RequiresPopulation>true</RequiresPopulation>
+				<OnePerCity>true</OnePerCity>
+			</Set>
+		</Update>
+		<Update>
+			<Where DistrictType="DISTRICT_CANAL"/>
+			<Set>
+				<RequiresPopulation>true</RequiresPopulation>
+				<OnePerCity>true</OnePerCity>
+			</Set>
+		</Update>
+		<Update>
+			<Where DistrictType="DISTRICT_SPACEPORT"/>
+			<Set>
+				<RequiresPopulation>true</RequiresPopulation>
+			</Set>
+		</Update>
+		
+	</Districts>
+	<Districts_XP2>
+		<Update>
+			<Where DistrictType="DISTRICT_DAM"/>
+			<Set>
+				<PreventsDrought>false</PreventsDrought>
+			</Set>
+		</Update>
+	</Districts_XP2>
+	<District_Adjacencies>
+		<Row DistrictType="DISTRICT_COMMERCIAL_HUB" YieldChangeId="SSGB_Commercial_Plantation_Gold"/>
+		<Row DistrictType="DISTRICT_COMMERCIAL_HUB" YieldChangeId="SSGB_Commercial_Camp_Gold"/>
+		<Row DistrictType="DISTRICT_COMMERCIAL_HUB" YieldChangeId="SSGB_Commercial_Pasture_Gold"/>
+		<Row DistrictType="DISTRICT_COMMERCIAL_HUB" YieldChangeId="SSGB_Commercial_Quarry_Gold"/>
+
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_District_Neighborhood"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Aqueduct"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Preserve"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_GovtPlaza"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Dam"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Canal"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Aerodrome"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Encapment"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_IZ"/>
+		
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Bath"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Ikanda"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Thanh"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Hansa"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Oppidum"/>
+		
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Quarry"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Plantation"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Camp"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Pasture"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldChangeId="SSGB_Neighborhood_Farm"/>
+	
+		<!--add adjacency bonuses to Kongo from base game-->
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_District_Neighborhood"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Aqueduct"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Preserve"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_GovtPlaza"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Dam"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Canal"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Aerodrome"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Encapment"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_IZ"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Quarry"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Plantation"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Camp"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Pasture"/>
+		<Row DistrictType="DISTRICT_MBANZA" YieldChangeId="SSGB_Neighborhood_Farm"/>
+		
+		<Row DistrictType="DISTRICT_AERODROME" YieldChangeId="SSGB_District_Aerodrome"/>
+		<Row DistrictType="DISTRICT_AERODROME" YieldChangeId="SSGB_CityCenter_Aerodrome_Culture"/>
+		<Row DistrictType="DISTRICT_AERODROME" YieldChangeId="SSGB_Neighborhood_Aerodrome_Culture"/>
+		<Row DistrictType="DISTRICT_AERODROME" YieldChangeId="SSGB_NaturalWonder_Aerodrome_Culture"/>
+		<Row DistrictType="DISTRICT_AERODROME" YieldChangeId="SSGB_Wonder_Aerodome_Culture"/>
+		<Row DistrictType="DISTRICT_AERODROME" YieldChangeId="SSGB_GovtPlaza_Aerodrome_Culture"/>
+	</District_Adjacencies>
+
+	<District_CitizenYieldChanges>
+		<Row DistrictType="DISTRICT_GOVERNMENT" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row DistrictType="DISTRICT_AERODROME" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row DistrictType="DISTRICT_NEIGHBORHOOD" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row DistrictType="DISTRICT_AQUEDUCT" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row DistrictType="DISTRICT_DAM" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row DistrictType="DISTRICT_DAM" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row DistrictType="DISTRICT_CANAL" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row DistrictType="DISTRICT_CANAL" YieldType="YIELD_GOLD" YieldChange="2"/>
+	</District_CitizenYieldChanges>
+	
+	<Adjacency_YieldChanges>
+		<!-- Commercial Hubs give adjacency bonuses for plantation, stable, camp, and quarry districe; +2, +1, +1, and +1 gold respectively-->
+		<Row ID="SSGB_Commercial_Plantation_Gold" Description="SSGB_LOC_COMMERCIAL_PLANTATION_GOLD_DESCRIPTION" YieldType="YIELD_GOLD" YieldChange="2" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_PLANTATION"/>
+		<Row ID="SSGB_Commercial_Camp_Gold" Description="SSGB_LOC_COMMERCIAL_CAMP_GOLD_DESCRIPTION" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_CAMP"/>
+		<Row ID="SSGB_Commercial_Pasture_Gold" Description="SSGB_LOC_COMMERCIAL_PASTURE_GOLD_DESCRIPTION" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_PASTURE"/>
+		<Row ID="SSGB_Commercial_Quarry_Gold" Description="SSGB_LOC_COMMERCIAL_QUARRY_GOLD_DESCRIPTION" YieldType="YIELD_GOLD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_QUARRY"/>
+		
+		<!-- Neighborhoods give adajacency bonuses/./-->
+		<Row ID="SSGB_District_Neighborhood" Description="Placeholder" YieldType="YIELD_GOLD" YieldChange="7" TilesRequired="2" OtherDistrictAdjacent="true"/>
+		<Row ID="SSGB_Neighborhood_Aqueduct" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="3" TilesRequired="1" AdjacentDistrict="DISTRICT_AQUEDUCT" />
+		<Row ID="SSGB_Neighborhood_Preserve" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="3" TilesRequired="1" AdjacentDistrict="DISTRICT_PRESERVE" />
+		<Row ID="SSGB_Neighborhood_GovtPlaza" Description="Placeholder" YieldType="YIELD_GOLD" YieldChange="7" TilesRequired="1" AdjacentDistrict="DISTRICT_GOVERNMENT" />
+		<Row ID="SSGB_Neighborhood_Dam" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="3" TilesRequired="1" AdjacentDistrict="DISTRICT_DAM" />
+		<Row ID="SSGB_Neighborhood_Canal" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="3" TilesRequired="1" AdjacentDistrict="DISTRICT_CANAL" />
+		<Row ID="SSGB_Neighborhood_Aerodrome" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_AERODROME" />
+		<Row ID="SSGB_Neighborhood_Encapment" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_ENCAMPMENT" />
+		<Row ID="SSGB_Neighborhood_IZ" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_INDUSTRIAL_ZONE" />
+		<!-- Unique Districts-->
+		<Row ID="SSGB_Neighborhood_Bath" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="3" TilesRequired="1" AdjacentDistrict="DISTRICT_BATH" />
+		<Row ID="SSGB_Neighborhood_Ikanda" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_IKANDA" />
+		<Row ID="SSGB_Neighborhood_Thanh" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_THANH" />
+		<Row ID="SSGB_Neighborhood_Hansa" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_HANSA" />
+		<Row ID="SSGB_Neighborhood_Oppidum" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_OPPIDUM" />
+
+		<!-- Improvement adjacency bonuses -->
+		<Row ID="SSGB_Neighborhood_Quarry" Description="Placeholder" YieldType="YIELD_SCIENCE" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_QUARRY"/>
+		<Row ID="SSGB_Neighborhood_Plantation" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_PLANTATION"/>
+		<Row ID="SSGB_Neighborhood_Camp" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_CAMP"/>
+		<Row ID="SSGB_Neighborhood_Pasture" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_PASTURE"/>
+		<Row ID="SSGB_Neighborhood_Farm" Description="Placeholder" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="2" AdjacentImprovement="IMPROVEMENT_FARM"/>
+		
+		<!-- Aerdrome districts give culture adjacency bonuses -->
+		<Row ID="SSGB_District_Aerodrome" Description="SSGB_LOC_CITYCENTER_AERODROME_CULTURE_DESCRIPTION" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="3" OtherDistrictAdjacent="true"/>
+		<Row ID="SSGB_CityCenter_Aerodrome_Culture" Description="SSGB_LOC_CITYCENTER_AERODROME_CULTURE_DESCRIPTION" YieldType="YIELD_CULTURE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_CITY_CENTER"/>
+		<Row ID="SSGB_Neighborhood_Aerodrome_Culture" Description="SSGB_LOC_NEIGHBORHOOD_AERODROME_DESCRIPTION" YieldType="YIELD_CULTURE" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_NEIGHBORHOOD"/>
+		<Row ID="SSGB_NaturalWonder_Aerodrome_Culture" Description="SSGB_LOC_NATURALWONDER_AERODROME_CULTURE_DESCRIPTION" YieldType="YIELD_CULTURE" YieldChange="2" TilesRequired="1" AdjacentNaturalWonder="true"/>
+		<Row ID="SSGB_Wonder_Aerodome_Culture" Description="Placeholder" YieldType="YIELD_CULTURE" YieldChange="1" TilesRequired="1" AdjacentWonder="true"/>
+		<!-- Govt Plaza from R&F-->
+		<Row ID="SSGB_GovtPlaza_Aerodrome_Culture" Description="SSGB_LOC_GOVT_PLAZA_AERODROME_CULTURE_DESCRIPTION" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_GOVERNMENT"/>
+	</Adjacency_YieldChanges>
+</GameData>

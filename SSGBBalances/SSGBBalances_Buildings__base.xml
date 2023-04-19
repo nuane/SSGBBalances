@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGBBalances_Buildings__base -->
+<!-- Author: michael -->
+<!-- DateCreated: 10/12/2022 12:23:42 PM -->
+<GameData>
+	<Buildings>
+		<Update>
+			<Where BuildingType="BUILDING_PALACE"/>
+			<Set>
+				<OuterDefenseHitPoints>50</OuterDefenseHitPoints>
+				<Entertainment>1</Entertainment>
+				<OuterDefenseStrength>2</OuterDefenseStrength>
+				<RegionalRange>6</RegionalRange>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_WALLS"/>
+			<Set>
+				<OuterDefenseHitPoints>50</OuterDefenseHitPoints>
+				<OuterDefenseStrength>1</OuterDefenseStrength>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_CASTLE"/>
+			<Set>
+				<OuterDefenseHitPoints>50</OuterDefenseHitPoints>
+				<OuterDefenseStrength>1</OuterDefenseStrength>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_STAR_FORT"/>
+			<Set>
+				<OuterDefenseHitPoints>50</OuterDefenseHitPoints>
+				<OuterDefenseStrength>1</OuterDefenseStrength>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_SEWER"/>
+			<Set>
+				<Housing>4</Housing>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_HYDROELECTRIC_DAM"/>
+			<Set>
+				<CitizenSlots>1</CitizenSlots>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_POWER_PLANT"/>
+			<Set>
+				<CitizenSlots>3</CitizenSlots>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_FOSSIL_FUEL_POWER_PLANT"/>
+			<Set>
+				<CitizenSlots>3</CitizenSlots>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_FOOD_MARKET"/>
+			<Set>
+				<CitizenSlots>1</CitizenSlots>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_SHOPPING_MALL"/>
+			<Set>
+				<CitizenSlots>1</CitizenSlots>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_AMPHITHEATER"/>
+			<Set>
+				<Entertainment>2</Entertainment>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_ARENA"/>
+			<Set>
+				<Description>SSGB_LOC_ARENA_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_BROADCAST_CENTER"/>
+			<Set>
+				<Description>SSGB_LOC_BROADCAST_CENTER_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_RESEARCH_LAB"/>
+			<Set>
+				<Description>SSGB_LOC_RESEARCH_LAB_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_BARRACKS"/>
+			<Set>
+				<Description>SSGB_LOC_BARRACKS_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_STABLE"/>
+			<Set>
+				<Description>SSGB_LOC_STABLE_DESCRIPTION</Description>
+			</Set>
+		</Update>
+	</Buildings>
+	
+	<Building_GreatWorks>
+		<Update>
+			<Where BuildingType="BUILDING_AMPHITHEATER"/>
+			<Set>
+				<NumSlots>0</NumSlots>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_PALACE"/>
+			<Set>
+				<NumSlots>4</NumSlots>
+			</Set>
+		</Update>
+	</Building_GreatWorks>
+	
+	<Building_YieldChanges>
+		<Row BuildingType="BUILDING_SEWER" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_WATER_MILL" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_WATER_MILL" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Update>
+			<Where BuildingType="BUILDING_SHOPPING_MALL"/>
+			<Set>
+				<YieldType>YIELD_GOLD</YieldType>
+				<YieldChange>1</YieldChange>
+			</Set>
+		</Update>
+	</Building_YieldChanges>
+	
+	<Building_YieldChangesBonusWithPower>
+		<Update>
+			<Where BuildingType="BUILDING_FOOD_MARKET"/>
+			<Set>
+				<YieldType>YIELD_FOOD</YieldType>
+				<YieldChange>6</YieldChange>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_SHOPPING_MALL"/>
+			<Set>
+				<YieldType>YIELD_GOLD</YieldType>
+				<YieldChange>4</YieldChange>
+			</Set>
+		</Update>
+	</Building_YieldChangesBonusWithPower>
+
+	<Building_CitizenYieldChanges>
+		<Row BuildingType="BUILDING_FOOD_MARKET" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row BuildingType="BUILDING_SHOPPING_MALL" YieldType="YIELD_GOLD" YieldChange="3"/>
+
+		<Row BuildingType="BUILDING_FOSSIL_FUEL_POWER_PLANT" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row BuildingType="BUILDING_POWER_PLANT" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+	</Building_CitizenYieldChanges>
+	<Building_GreatPersonPoints>
+		<Row BuildingType="BUILDING_HYDROELECTRIC_DAM" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_HYDROELECTRIC_DAM" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="2"/>
+		<Row BuildingType="BUILDING_POWER_PLANT" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="3"/>
+	</Building_GreatPersonPoints>
+	
+	<Building_YieldDistrictCopies>
+		<Row BuildingType="BUILDING_FOOD_MARKET" OldYieldType="YIELD_FOOD" NewYieldType="YIELD_PRODUCTION"/>
+		<Row BuildingType="BUILDING_SHOPPING_MALL" OldYieldType="YIELD_GOLD" NewYieldType="YIELD_FAITH"/>
+	</Building_YieldDistrictCopies> 
+	<BuildingModifiers>
+		<!--Current building modifiers-->
+		<Row BuildingType="BUILDING_AMPHITHEATER" ModifierId="SSGB_AMPHITHEATER_TOURISM"/>
+		<Row BuildingType="BUILDING_ARENA" ModifierId="SSGB_ARENA_RAINFOREST"/>
+		<Row BuildingType="BUILDING_ZOO" ModifierId="SSGB_ZOO_CAMP_ANIMALS"/>
+		<Row BuildingType="BUILDING_ZOO" ModifierId="SSGB_ZOO_PASTURE_ANIMALS"/>
+		<Row BuildingType="BUILDING_BROADCAST_CENTER" ModifierId="SSGB_BROADCAST_CENTER_LAB_RAINFOREST"/> <!--America UB-->
+		<Row BuildingType="BUILDING_FILM_STUDIO" ModifierId="SSGB_BROADCAST_CENTER_LAB_RAINFOREST"/>
+		<Row BuildingType="BUILDING_RESEARCH_LAB" ModifierId="SSGB_RESEARCH_LAB_RAINFOREST"/>
+		<Row BuildingType="BUILDING_BARRACKS" ModifierId="SSGB_BARRACKS_CAMP"/>
+		<Row BuildingType="BUILDING_STABLE" ModifierId="SSGB_STABLE_PASTURE"/>
+	</BuildingModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>SSGB_AMPHITHEATER_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_TOURISM_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ARENA_RAINFOREST</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>SSGB_RAINFOREST_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ZOO_CAMP_ANIMALS</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>SSGB_CAMP_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ZOO_PASTURE_ANIMALS</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>SSGB_PASTURE_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_BROADCAST_CENTER_LAB_RAINFOREST</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>SSGB_RAINFOREST_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_RESEARCH_LAB_RAINFOREST</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>SSGB_RAINFOREST_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_BARRACKS_CAMP</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>SSGB_CAMP_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STABLE_PASTURE</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>SSGB_PASTURE_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>SSGB_AMPHITHEATER_TOURISM</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ARENA_RAINFOREST</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ARENA_RAINFOREST</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ZOO_CAMP_ANIMALS</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ZOO_CAMP_ANIMALS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ZOO_PASTURE_ANIMALS</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_ZOO_PASTURE_ANIMALS</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_BROADCAST_CENTER_LAB_RAINFOREST</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_BROADCAST_CENTER_LAB_RAINFOREST</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_RESEARCH_LAB_RAINFOREST</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_RESEARCH_LAB_RAINFOREST</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_BARRACKS_CAMP</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_BARRACKS_CAMP</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STABLE_PASTURE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STABLE_PASTURE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+
+	</ModifierArguments>
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>SSGB_RAINFOREST_REQUIREMENT</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>SSGB_CAMP_REQUIREMENT</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>SSGB_PASTURE_REQUIREMENT</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>SSGB_RAINFOREST_REQUIREMENT</RequirementSetId>
+			<RequirementId>REQUIRES_PLOT_HAS_JUNGLE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>SSGB_CAMP_REQUIREMENT</RequirementSetId>
+			<RequirementId>REQUIRES_PLOT_HAS_CAMP</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>SSGB_PASTURE_REQUIREMENT</RequirementSetId>
+			<RequirementId>REQUIRES_PLOT_HAS_PASTURE</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+</GameData>

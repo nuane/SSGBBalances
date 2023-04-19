@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameData1 -->
+<!-- Author: michael -->
+<!-- DateCreated: 9/16/2022 5:02:08 PM -->
+<GameData>
+	<Types>
+		<Row Type="BUILDING_STATUE" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_COURTHOUSE" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_HOSPITAL" Kind="KIND_BUILDING"/>
+		
+		<Row Type="BUILDING_RESERVOIR" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_FOUNTAIN" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_GARDEN" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_WTF" Kind="KIND_BUILDING"/> <!-- Water Treatment Facility -->
+		<Row Type="BUILDING_AQUACULTURE_FARM" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_FISH_HATCHERY" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_TVA" Kind="KIND_BUILDING"/> <!-- Tesla Valve Acclamator (Similar to hydro elec)-->
+		<Row Type="BUILDING_HOTEL" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_SKYSCRAPER" Kind="KIND_BUILDING"/>
+		
+		<Row Type="BUILDING_POST_OFFICE" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_AMUSEMENT_PARK" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_PRISON" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_WAREHOUSE" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_MASS_TRANSIT" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_HIGHWAY" Kind="KIND_BUILDING"/>
+
+		<Row Type="BUILDING_CASINO" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_CINEMA" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_RESTAURANT" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_LIFE_AQUATIC" Kind="KIND_BUILDING"/>
+
+		<Row Type="BUILDING_HEROIC_EPIC" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_CIRCUS_MAXIMUS" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_PUBLIC_BATHHOUSE" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_IRONWORKS" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_STEELWORKS" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_CENTRAL_BANK" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_HARBOR" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_LIBRARY" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_SPACEPORT" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_AERODROME" Kind="KIND_BUILDING"/>
+	</Types>
+	<Buildings>
+		<!--New Buildings for City Center-->
+		<Row BuildingType="BUILDING_STATUE" Name="SSGB_LOC_BUILDING_STATUE_NAME"  Description="SSGB_LOC_BUILDING_STATUE_DESCRIPTION" PrereqCivic="CIVIC_EARLY_EMPIRE" PrereqDistrict="DISTRICT_CITY_CENTER" PurchaseYield="YIELD_GOLD" Cost="110" AdvisorType="ADVISOR_GENERIC" Maintenance="2"/>
+		<Row BuildingType="BUILDING_COURTHOUSE" Name="SSGB_LOC_BUILDING_COURTHOUSE_NAME"  Description="SSGB_LOC_BUILDING_COURTHOUSE_DESCRIPTION" PrereqCivic="CIVIC_FEUDALISM" PrereqDistrict="DISTRICT_CITY_CENTER" PurchaseYield="YIELD_GOLD" Cost="225" AdvisorType="ADVISOR_GENERIC" Maintenance="5" Entertainment="1" Housing="1"/>
+		<Row BuildingType="BUILDING_HOSPITAL" Name="SSGB_LOC_BUILDING_HOSPITAL_NAME"  Description="SSGB_LOC_BUILDING_HOSPITAL_DESCRIPTION" PrereqTech="TECH_SANITATION" PrereqDistrict="DISTRICT_CITY_CENTER" PurchaseYield="YIELD_GOLD" Cost="360" AdvisorType="ADVISOR_GENERIC" Maintenance="5"/>
+		<!--New 3-choice buildings to mirror Communism, Fascism, and Capitalism-->
+		<Row BuildingType="BUILDING_HOTEL" Name="SSGB_LOC_BUILDING_HOTEL_NAME" Description="SSGB_LOC_BUILDING_HOTEL_DESCRIPTION" PrereqCivic="CIVIC_MOBILIZATION" PrereqDistrict="DISTRICT_AERODROME" PurchaseYield="YIELD_GOLD" Cost="400" AdvisorType="ADVISOR_CULTURE" Maintenance="1"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" Name="SSGB_LOC_BUILDING_SKYSCRAPER_NAME" Description="SSGB_LOC_BUILDING_SKYSCRAPER_DESCRIPTION" PrereqTech="TECH_STEEL" PrereqDistrict="DISTRICT_AERODROME" PurchaseYield="YIELD_GOLD" Cost="360" AdvisorType="ADVISOR_TECHNOLOGY" CitizenSlots="3" Maintenance="9"/>
+		<Row BuildingType="BUILDING_POST_OFFICE" Name="SSGB_LOC_BUILDING_POST_OFFICE_NAME" Description="SSGB_LOC_BUILDING_POST_OFFICE_DESCRIPTION" PrereqCivic="CIVIC_MOBILIZATION" PrereqDistrict="DISTRICT_NEIGHBORHOOD" PurchaseYield="YIELD_GOLD" Cost="350" AdvisorType="ADVISOR_CONQUEST" CitizenSlots="1" Maintenance="1"/>
+		<Row BuildingType="BUILDING_AMUSEMENT_PARK" Name="SSGB_LOC_BUILDING_AMUSEMENT_PARK_NAME"  Description="SSGB_LOC_BUILDING_AMUSEMENT_PARK_DESCRIPTION" PrereqTech="TECH_PLASTICS" PrereqDistrict="DISTRICT_NEIGHBORHOOD" PurchaseYield="YIELD_GOLD" Cost="480" AdvisorType="ADVISOR_CULTURE" CitizenSlots="2" RegionalRange="6" Maintenance="6" Entertainment="1"/>
+		<Row BuildingType="BUILDING_PRISON" Name="SSGB_LOC_BUILDING_PRISON_NAME"  Description="SSGB_LOC_BUILDING_PRISON_DESCRIPTION" PrereqCivic="CIVIC_COLD_WAR" PrereqDistrict="DISTRICT_NEIGHBORHOOD" PurchaseYield="YIELD_GOLD" Cost="420" AdvisorType="ADVISOR_CONQUEST" CitizenSlots="4" Maintenance="9"/>
+		<Row BuildingType="BUILDING_WAREHOUSE" Name="SSGB_LOC_BUILDING_WAREHOUSE_NAME" Description="SSGB_LOC_BUILDING_WAREHOUSE_DESCRIPTION" PrereqTech="TECH_COMBINED_ARMS" PrereqDistrict="DISTRICT_NEIGHBORHOOD" PurchaseYield="YIELD_GOLD" Cost="380" AdvisorType="ADVISOR_TECHNOLOGY" CitizenSlots="3" Maintenance="3"/>
+	
+		<Row BuildingType="BUILDING_CASINO" Name="SSGB_LOC_BUILDING_CASINO_NAME" Description="SSGB_LOC_BUILDING_CASINO_DESCRIPTION" PrereqCivic="CIVIC_CAPITALISM" PrereqDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" PurchaseYield="YIELD_GOLD" Cost="380" AdvisorType="ADVISOR_CULTURE" RegionalRange="6"/>
+		<Row BuildingType="BUILDING_CINEMA" Name="SSGB_LOC_BUILDING_CINEMA_NAME" Description="SSGB_LOC_BUILDING_CINEMA_DESCRIPTION" PrereqTech="TECH_ELECTRICITY" PrereqDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" PurchaseYield="YIELD_GOLD" Cost="400" AdvisorType="ADVISOR_CONQUEST" Maintenance="2"/>
+		<Row BuildingType="BUILDING_RESTAURANT" Name="SSGB_LOC_BUILDING_RESTAURANT_NAME" Description="SSGB_LOC_BUILDING_RESTAURANT_DESCRIPTION" PrereqTech="TECH_REPLACEABLE_PARTS" PrereqDistrict="DISTRICT_WATER_ENTERTAINMENT_COMPLEX" PurchaseYield="YIELD_GOLD" Cost="380" AdvisorType="ADVISOR_CULTURE"/>
+		<Row BuildingType="BUILDING_LIFE_AQUATIC" Name="SSGB_LOC_BUILDING_LIFE_AQUATIC_NAME" Description="SSGB_LOC_BUILDING_LIFE_AQUATIC_DESCRIPTION" PrereqCivic="CIVIC_CONSERVATION" PrereqDistrict="DISTRICT_WATER_ENTERTAINMENT_COMPLEX" PurchaseYield="YIELD_GOLD" Cost="400" AdvisorType="ADVISOR_TECHNOLOGY" Maintenance="2"/>
+
+		<Row BuildingType="BUILDING_MASS_TRANSIT" Name="SSGB_LOC_BUILDING_MASS_TRANSIT_NAME"  Description="SSGB_LOC_BUILDING_MASS_TRANSIT_DESCRIPTION" PrereqCivic="CIVIC_ENVIRONMENTALISM" PrereqDistrict="DISTRICT_NEIGHBORHOOD" PurchaseYield="YIELD_GOLD" Cost="620" AdvisorType="ADVISOR_GENERIC" Housing="6" Maintenance="15"/>
+		<Row BuildingType="BUILDING_HIGHWAY" Name="SSGB_LOC_BUILDING_HIGHWAY_NAME"  Description="SSGB_LOC_BUILDING_HIGHWAY_DESCRIPTION" PrereqTech="TECH_COMPOSITES" PrereqDistrict="DISTRICT_NEIGHBORHOOD" PurchaseYield="YIELD_GOLD" Cost="640" AdvisorType="ADVISOR_GENERIC" Maintenance="10"/>
+		<!--Aqueduct district buildings-->
+		<Row BuildingType="BUILDING_RESERVOIR" Name="SSGB_LOC_BUILDING_RESERVOIR_NAME" Description="Placeholder" PrereqTech="TECH_ENGINEERING" PrereqDistrict="DISTRICT_AQUEDUCT" PurchaseYield="YIELD_GOLD" Cost="120" AdvisorType="ADVISOR_GENERIC" Housing="2" Maintenance="1" CitizenSlots="1"/>
+		<Row BuildingType="BUILDING_FOUNTAIN" Name="SSBG_LOC_BUILDING_FOUNTAIN_NAME" Description="SSBG_LOC_BUILDING_FOUNTAIN_DESCRIPTION" PrereqTech="TECH_MILITARY_ENGINEERING" PrereqDistrict="DISTRICT_AQUEDUCT" PurchaseYield="YIELD_GOLD" Cost="220" AdvisorType="ADVISOR_CONQUEST" Maintenance="2" Entertainment="1" />
+		<Row BuildingType="BUILDING_GARDEN" Name="SSBG_LOC_BUILDING_GARDEN_NAME" Description="SSGB_LOC_BUILDING_GARDEN_DESCRIPTION" PrereqCivic="CIVIC_HUMANISM" PrereqDistrict="DISTRICT_AQUEDUCT" PurchaseYield="YIELD_GOLD" Cost="250" AdvisorType="ADVISOR_CULTURE" Maintenance="2" CitizenSlots="1" Entertainment="1" />
+		<Row BuildingType="BUILDING_WTF" Name="SSBG_LOC_BUILDING_WTF_NAME" Description="SSBG_LOC_BUILDING_WTF_DESCRIPTION" PrereqTech="TECH_CHEMISTRY" PrereqDistrict="DISTRICT_AQUEDUCT" PurchaseYield="YIELD_GOLD" Cost="400" AdvisorType="ADVISOR_GENERIC"  Housing="4" Maintenance="5" CitizenSlots="1"/>
+		<!--Dam district buildings-->
+		<Row BuildingType="BUILDING_AQUACULTURE_FARM" Name="SSGB_LOC_BUILDING_AQUACULTURE_NAME" Description="SSGB_LOC_BUILDING_AQUACULTURE_DESCRIPTION" PrereqTech="TECH_BUTTRESS" PrereqDistrict="DISTRICT_DAM" PurchaseYield="YIELD_GOLD" Cost="225" AdvisorType="ADVISOR_GENERIC" CitizenSlots="2" Housing="2"/>
+		<!--Canal district buildings-->
+		<Row BuildingType="BUILDING_FISH_HATCHERY" Name="SSGB_LOC_BUILDING_FISH_HATCHERY_NAME" Description="SSGB_LOC_BUILDING_FISH_HATCHERY_DESCRIPTION" PrereqTech="TECH_CHEMISTRY" PrereqDistrict="DISTRICT_CANAL" PurchaseYield="YIELD_GOLD" Cost="225" AdvisorType="ADVISOR_GENERIC" CitizenSlots="2" Housing="2"/>
+		<Row BuildingType="BUILDING_TVA" Name="SSGB_LOC_BUILDING_TVA_NAME" Description="SSGB_LOC_BUILDING_TVA_DESCRIPTION" PrereqTech="TECH_ROBOTICS" PrereqDistrict="DISTRICT_CANAL" PurchaseYield="YIELD_GOLD" Cost="1000" AdvisorType="ADVISOR_GENERIC" CitizenSlots="4" />
+		<!--National Wonders-->
+		<Row BuildingType="BUILDING_HEROIC_EPIC" Name="SSGB_LOC_BUILDING_HEROIC_EPIC_NAME" Description="SSGB_LOC_BUILDING_HEROIC_EPIC_DESCRIPTION" PrereqCivic="CIVIC_GAMES_RECREATION" PrereqDistrict="DISTRICT_ENCAMPMENT" Cost="200" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CONQUEST" RegionalRange="6" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_NATIONAL_LIBRARY" Name="SSGB_LOC_BUILDING_NATIONAL_LIBRARY_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_LIBRARY_DESCRIPTION" PrereqCivic="CIVIC_DRAMA_POETRY" PrereqDistrict="DISTRICT_GOVERNMENT" Cost="220" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_TECHNOLOGY" CitizenSlots="1" RegionalRange="4" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_CIRCUS_MAXIMUS" Name="SSGB_LOC_BUILDING_CIRCUS_MAXIMUS_NAME" Description="SSGB_LOC_BUILDING_CIRCUS_MAXIMUS_DESCRIPTION" PrereqCivic="CIVIC_THEOLOGY" PrereqDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" Cost="400" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" Entertainment="1" RegionalRange="9" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_PUBLIC_BATHHOUSE" Name="SSGB_LOC_BUILDING_PUBLIC_BATHHOUSE_NAME" Description="SSGB_LOC_BUILDING_PUBLIC_BATHHOUSE_DESCRIPTION" PrereqCivic="CIVIC_CONSERVATION" PrereqDistrict="DISTRICT_WATER_ENTERTAINMENT_COMPLEX" Cost="500" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" Entertainment="2" RegionalRange="15" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_IRONWORKS" Name="SSGB_LOC_BUILDING_IRONWORKS_NAME" Description="SSGB_LOC_BUILDING_IRONWORKS_DESCRIPTION" PrereqTech="TECH_MILITARY_ENGINEERING" PrereqDistrict="DISTRICT_INDUSTRIAL_ZONE" Cost="355" AdvisorType="ADVISOR_GENERIC" CitizenSlots="4" MaxPlayerInstances="2"/>
+		<Row BuildingType="BUILDING_STEELWORKS" Name="SSGB_LOC_BUILDING_STEELWORKS_NAME" Description="SSGB_LOC_BUILDING_STEELWORKS_DESCRIPTION" PrereqTech="TECH_STEAM_POWER" PrereqDistrict="DISTRICT_INDUSTRIAL_ZONE" Cost="700" AdvisorType="ADVISOR_GENERIC" CitizenSlots="2" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" Name="SSGB_LOC_BUILDING_CENTRAL_BANK_NAME" Description="SSGB_LOC_BUILDING_CENTRAL_BANK_DESCRIPTION" PrereqTech="TECH_ECONOMICS" PrereqDistrict="DISTRICT_GOVERNMENT" Cost="850" AdvisorType="ADVISOR_GENERIC" CitizenSlots="2"  RegionalRange="8" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_NATIONAL_HARBOR" Name="SSGB_LOC_BUILDING_NATIONAL_HARBOR_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_HARBOR_DESCRIPTION" PrereqTech="TECH_ECONOMICS" PrereqDistrict="DISTRICT_HARBOR" Cost="1200" AdvisorType="ADVISOR_GENERIC" CitizenSlots="6"  RegionalRange="30" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" Name="SSGB_LOC_BUILDING_NATIONAL_SPACEPORT_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_SPACEPORT_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_SPACEPORT" Cost="5000" PurchaseYield="YIELD_GOLD" AdvisorType="ADVISOR_TECHNOLOGY" CitizenSlots="6" RegionalRange="5" MaxPlayerInstances="1"/>
+		<Row BuildingType="BUILDING_NATIONAL_AERODROME" Name="SSGB_LOC_BUILDING_NATIONAL_AERODROME_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_AERODROME_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="5000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="5" MaxPlayerInstances="1"/>
+	</Buildings>
+	<Buildings_XP2>
+		<Row BuildingType="BUILDING_HOSPITAL" RequiredPower="1" EntertainmentBonusWithPower="1"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" RequiredPower="1"/>
+		<Row BuildingType="BUILDING_POST_OFFICE" RequiredPower="1"/>
+		<Row BuildingType="BUILDING_AMUSEMENT_PARK" RequiredPower="2" EntertainmentBonusWithPower="3"/>
+		<Row BuildingType="BUILDING_CASINO" RequiredPower="1"/>
+		<Row BuildingType="BUILDING_CINEMA" RequiredPower="1"/>
+
+		<Row BuildingType="BUILDING_WTF" RequiredPower="1"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" RequiredPower="3"/>
+		<Row BuildingType="BUILDING_NATIONAL_HARBOR" RequiredPower="7"/>
+		<Row BuildingType="BUILDING_STEELWORKS" RequiredPower="5"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" RequiredPower="4"/>
+		<Row BuildingType="BUILDING_NATIONAL_AERODROME" RequiredPower="4"/>
+	</Buildings_XP2>
+	<BuildingPrereqs>
+		<Row Building="BUILDING_AIRPORT" PrereqBuilding="BUILDING_HOTEL"/>
+		<Row Building="BUILDING_AIRPORT" PrereqBuilding="BUILDING_SKYSCRAPER"/>
+		<Row Building="BUILDING_ZOO" PrereqBuilding="BUILDING_CASINO"/>
+		<Row Building="BUILDING_ZOO" PrereqBuilding="BUILDING_CINEMA"/>
+		<Row Building="BUILDING_AQUATICS_CENTER" PrereqBuilding="BUILDING_RESTAURANT"/>
+		<Row Building="BUILDING_AQUATICS_CENTER" PrereqBuilding="BUILDING_LIFE_AQUATIC"/>
+
+		<Row Building="BUILDING_GARDEN" PrereqBuilding="BUILDING_RESERVOIR"/>
+		<Row Building="BUILDING_FOUNTAIN" PrereqBuilding="BUILDING_RESERVOIR"/>
+		<Row Building="BUILDING_WTF" PrereqBuilding="BUILDING_FOUNTAIN"/>
+		<Row Building="BUILDING_WTF" PrereqBuilding="BUILDING_GARDEN"/>
+		<Row Building="BUILDING_HYDROELECTRIC_DAM" PrereqBuilding="BUILDING_AQUACULTURE_FARM"/>
+		<Row Building="BUILDING_TVA" PrereqBuilding="BUILDING_FISH_HATCHERY"/>
+		<Row Building="BUILDING_AMUSEMENT_PARK" PrereqBuilding="BUILDING_POST_OFFICE"/>
+		<Row Building="BUILDING_AMUSEMENT_PARK" PrereqBuilding="BUILDING_FOOD_MARKET"/>
+		<Row Building="BUILDING_AMUSEMENT_PARK" PrereqBuilding="BUILDING_SHOPPING_MALL"/>
+		<Row Building="BUILDING_PRISON" PrereqBuilding="BUILDING_POST_OFFICE"/>
+		<Row Building="BUILDING_PRISON" PrereqBuilding="BUILDING_FOOD_MARKET"/>
+		<Row Building="BUILDING_PRISON" PrereqBuilding="BUILDING_SHOPPING_MALL"/>
+		<Row Building="BUILDING_WAREHOUSE" PrereqBuilding="BUILDING_POST_OFFICE"/>
+		<Row Building="BUILDING_WAREHOUSE" PrereqBuilding="BUILDING_FOOD_MARKET"/>
+		<Row Building="BUILDING_WAREHOUSE" PrereqBuilding="BUILDING_SHOPPING_MALL"/>
+		<Row Building="BUILDING_CASINO" PrereqBuilding="BUILDING_ARENA"/>
+		<Row Building="BUILDING_CINEMA" PrereqBuilding="BUILDING_ARENA"/>
+		<Row Building="BUILDING_RESTAURANT" PrereqBuilding="BUILDING_FERRIS_WHEEL"/>
+		<Row Building="BUILDING_LIFE_AQUATIC" PrereqBuilding="BUILDING_FERRIS_WHEEL"/>
+		<Row Building="BUILDING_MASS_TRANSIT" PrereqBuilding="BUILDING_AMUSEMENT_PARK"/>
+		<Row Building="BUILDING_MASS_TRANSIT" PrereqBuilding="BUILDING_PRISON"/>
+		<Row Building="BUILDING_MASS_TRANSIT" PrereqBuilding="BUILDING_WAREHOUSE"/>
+		<Row Building="BUILDING_HIGHWAY" PrereqBuilding="BUILDING_AMUSEMENT_PARK"/>
+		<Row Building="BUILDING_HIGHWAY" PrereqBuilding="BUILDING_PRISON"/>
+		<Row Building="BUILDING_HIGHWAY" PrereqBuilding="BUILDING_WAREHOUSE"/>
+		
+		<Row Building="BUILDING_HEROIC_EPIC" PrereqBuilding="BUILDING_AMPHITHEATER"/><!--Requires encampment + tier 1 theater building-->
+		<Row Building="BUILDING_CIRCUS_MAXIMUS" PrereqBuilding="BUILDING_TEMPLE"/><!--Requires entrtn cmplx + tier 2 holy building-->
+		<Row Building="BUILDING_PUBLIC_BATHHOUSE" PrereqBuilding="BUILDING_RESERVOIR"/><!--Requires water cmplx + tier 1 aqueduct building-->
+		<Row Building="BUILDING_NATIONAL_LIBRARY" PrereqBuilding="BUILDING_LIBRARY"/> <!--Requires govt + tier 1 campus building-->
+		<Row Building="BUILDING_IRONWORKS" PrereqBuilding="BUILDING_ARMORY"/><!--Requires iz + tier 2 encampment building-->
+		<Row Building="BUILDING_STEELWORKS" PrereqBuilding="BUILDING_IRONWORKS"/><!--Requires iz + Ironworks-->
+		<Row Building="BUILDING_CENTRAL_BANK" PrereqBuilding="BUILDING_UNIVERSITY"/><!--Requires commercial + tier 2 campus building-->
+		<Row Building="BUILDING_NATIONAL_SPACEPORT" PrereqBuilding="BUILDING_FACTORY"/> <!--Requires campus + tier 2 iz building-->
+		<Row Building="BUILDING_NATIONAL_AERODROME" PrereqBuilding="BUILDING_FACTORY"/> <!--Requires campus + tier 2 iz building-->
+	</BuildingPrereqs>
+	<MutuallyExclusiveBuildings>
+		<Row Building="BUILDING_HANGAR" MutuallyExclusiveBuilding="BUILDING_HOTEL"/>
+		<Row Building="BUILDING_HANGAR" MutuallyExclusiveBuilding="BUILDING_SKYSCRAPER"/>
+		<Row Building="BUILDING_FOOD_MARKET" MutuallyExclusiveBuilding="BUILDING_POST_OFFICE"/>
+		<Row Building="BUILDING_SHOPPING_MALL" MutuallyExclusiveBuilding="BUILDING_POST_OFFICE"/>
+
+		<Row Building="BUILDING_ZOO" MutuallyExclusiveBuilding="BUILDING_CASINO"/>
+		<Row Building="BUILDING_ZOO" MutuallyExclusiveBuilding="BUILDING_CINEMA"/>
+		<Row Building="BUILDING_CASINO" MutuallyExclusiveBuilding="BUILDING_ZOO"/>
+		<Row Building="BUILDING_CASINO" MutuallyExclusiveBuilding="BUILDING_CINEMA"/>
+		<Row Building="BUILDING_CINEMA" MutuallyExclusiveBuilding="BUILDING_ZOO"/>
+		<Row Building="BUILDING_CINEMA" MutuallyExclusiveBuilding="BUILDING_CASINO"/>
+		<Row Building="BUILDING_AQUARIUM" MutuallyExclusiveBuilding="BUILDING_RESTAURANT"/>
+		<Row Building="BUILDING_AQUARIUM" MutuallyExclusiveBuilding="BUILDING_LIFE_AQUATIC"/>
+		<Row Building="BUILDING_RESTAURANT" MutuallyExclusiveBuilding="BUILDING_AQUARIUM"/>
+		<Row Building="BUILDING_RESTAURANT" MutuallyExclusiveBuilding="BUILDING_LIFE_AQUATIC"/>
+		<Row Building="BUILDING_LIFE_AQUATIC" MutuallyExclusiveBuilding="BUILDING_AQUARIUM"/>
+		<Row Building="BUILDING_LIFE_AQUATIC" MutuallyExclusiveBuilding="BUILDING_RESTAURANT"/>
+		<Row Building="BUILDING_FOUNTAIN" MutuallyExclusiveBuilding="BUILDING_GARDEN"/>
+		<Row Building="BUILDING_GARDEN" MutuallyExclusiveBuilding="BUILDING_FOUNTAIN"/>
+		<Row Building="BUILDING_HOTEL" MutuallyExclusiveBuilding="BUILDING_HANGAR"/>
+		<Row Building="BUILDING_HOTEL" MutuallyExclusiveBuilding="BUILDING_SKYSCRAPER"/>
+		<Row Building="BUILDING_SKYSCRAPER" MutuallyExclusiveBuilding="BUILDING_HANGAR"/>
+		<Row Building="BUILDING_SKYSCRAPER" MutuallyExclusiveBuilding="BUILDING_HOTEL"/>
+		<Row Building="BUILDING_POST_OFFICE" MutuallyExclusiveBuilding="BUILDING_FOOD_MARKET"/>
+		<Row Building="BUILDING_POST_OFFICE" MutuallyExclusiveBuilding="BUILDING_SHOPPING_MALL"/>
+		<Row Building="BUILDING_AMUSEMENT_PARK" MutuallyExclusiveBuilding="BUILDING_PRISON"/>
+		<Row Building="BUILDING_AMUSEMENT_PARK" MutuallyExclusiveBuilding="BUILDING_WAREHOUSE"/>
+		<Row Building="BUILDING_WAREHOUSE" MutuallyExclusiveBuilding="BUILDING_PRISON"/>
+		<Row Building="BUILDING_WAREHOUSE" MutuallyExclusiveBuilding="BUILDING_AMUSEMENT_PARK"/>
+		<Row Building="BUILDING_PRISON" MutuallyExclusiveBuilding="BUILDING_AMUSEMENT_PARK"/>
+		<Row Building="BUILDING_PRISON" MutuallyExclusiveBuilding="BUILDING_WAREHOUSE"/>
+		<Row Building="BUILDING_HIGHWAY" MutuallyExclusiveBuilding="BUILDING_MASS_TRANSIT"/>
+		<Row Building="BUILDING_MASS_TRANSIT" MutuallyExclusiveBuilding="BUILDING_HIGHWAY"/>
+	</MutuallyExclusiveBuildings>
+	<Building_CitizenYieldChanges>
+		<Row BuildingType="BUILDING_GARDEN" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_WTF" YieldType="YIELD_FOOD" YieldChange="5"/>
+		<Row BuildingType="BUILDING_TVA" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_TVA" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Row BuildingType="BUILDING_HOTEL" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_POST_OFFICE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row BuildingType="BUILDING_AMUSEMENT_PARK" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_WAREHOUSE" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_PRISON" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		
+		<Row BuildingType="BUILDING_NATIONAL_LIBRARY" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_STEELWORKS" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row BuildingType="BUILDING_NATIONAL_HARBOR" YieldType="YIELD_GOLD" YieldChange="5"/>
+	</Building_CitizenYieldChanges>
+	<Building_YieldChanges>
+		<Row BuildingType="BUILDING_STATUE" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Row BuildingType="BUILDING_COURTHOUSE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row BuildingType="BUILDING_HOSPITAL" YieldType="YIELD_FOOD" YieldChange="5"/>
+		
+		<Row BuildingType="BUILDING_RESERVOIR" YieldType="YIELD_FOOD" YieldChange="4"/>
+		<Row BuildingType="BUILDING_GARDEN" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row BuildingType="BUILDING_AQUACULTURE_FARM" YieldType="YIELD_FOOD" YieldChange="3"/>
+		<Row BuildingType="BUILDING_AQUACULTURE_FARM" YieldType="YIELD_CULTURE" YieldChange="3"/>
+		<Row BuildingType="BUILDING_FISH_HATCHERY" YieldType="YIELD_FOOD" YieldChange="3"/>
+		<Row BuildingType="BUILDING_FISH_HATCHERY" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row BuildingType="BUILDING_FISH_HATCHERY" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+
+		<Row BuildingType="BUILDING_POST_OFFICE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row BuildingType="BUILDING_WAREHOUSE" YieldType="YIELD_FOOD" YieldChange="5"/>
+		<Row BuildingType="BUILDING_AMUSEMENT_PARK" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		
+		<Row BuildingType="BUILDING_CASINO" YieldType="YIELD_GOLD" YieldChange="4"/>
+		<Row BuildingType="BUILDING_CINEMA" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_RESTAURANT" YieldType="YIELD_FOOD" YieldChange="3"/>
+		<Row BuildingType="BUILDING_LIFE_AQUATIC" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+
+		<Row BuildingType="BUILDING_HEROIC_EPIC" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_HEROIC_EPIC" YieldType="YIELD_FAITH" YieldChange="1"/>
+		<Row BuildingType="BUILDING_NATIONAL_LIBRARY" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_CIRCUS_MAXIMUS" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_CIRCUS_MAXIMUS" YieldType="YIELD_FAITH" YieldChange="1"/>
+		<Row BuildingType="BUILDING_PUBLIC_BATHHOUSE" YieldType="YIELD_FOOD" YieldChange="3"/>
+		<Row BuildingType="BUILDING_IRONWORKS" YieldType="YIELD_PRODUCTION" YieldChange="8"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" YieldType="YIELD_FAITH" YieldChange="3"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" YieldType="YIELD_GOLD" YieldChange="6"/>
+		<Row BuildingType="BUILDING_NATIONAL_HARBOR" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" YieldType="YIELD_SCIENCE" YieldChange="20"/>
+		<Row BuildingType="BUILDING_NATIONAL_AERODROME" YieldType="YIELD_PRODUCTION" YieldChange="20"/>
+	</Building_YieldChanges>
+	<Building_YieldChangesBonusWithPower>
+		<Row BuildingType="BUILDING_HOSPITAL" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_HOSPITAL" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row BuildingType="BUILDING_WTF" YieldType="YIELD_FOOD" YieldChange="9"/>
+		
+		<Row BuildingType="BUILDING_SKYSCRAPER" YieldType="YIELD_PRODUCTION" YieldChange="3"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" YieldType="YIELD_FAITH" YieldChange="3"/>
+
+		<Row BuildingType="BUILDING_POST_OFFICE" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row BuildingType="BUILDING_AMUSEMENT_PARK" YieldType="YIELD_CULTURE" YieldChange="4"/>
+
+		<Row BuildingType="BUILDING_CASINO" YieldType="YIELD_GOLD" YieldChange="5"/>
+		<Row BuildingType="BUILDING_CINEMA" YieldType="YIELD_CULTURE" YieldChange="2"/>
+
+		<Row BuildingType="BUILDING_CENTRAL_BANK" YieldType="YIELD_GOLD" YieldChange="9"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" YieldType="YIELD_FAITH" YieldChange="24"/>
+		<Row BuildingType="BUILDING_NATIONAL_HARBOR" YieldType="YIELD_GOLD" YieldChange="9"/>
+		<Row BuildingType="BUILDING_NATIONAL_HARBOR" YieldType="YIELD_CULTURE" YieldChange="3"/>
+		<Row BuildingType="BUILDING_NATIONAL_HARBOR" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+
+		<Row BuildingType="BUILDING_STEELWORKS" YieldType="YIELD_PRODUCTION" YieldChange="12"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" YieldType="YIELD_SCIENCE" YieldChange="30"/>
+		<Row BuildingType="BUILDING_NATIONAL_AERODROME" YieldType="YIELD_PRODUCTION" YieldChange="30"/>
+	</Building_YieldChangesBonusWithPower>
+	<Building_YieldsPerEra>
+		<Row BuildingType="BUILDING_STATUE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" YieldType="YIELD_GOLD" YieldChange="6"/>
+	</Building_YieldsPerEra>
+	<Building_GreatPersonPoints>
+		<Row BuildingType="BUILDING_FOUNTAIN" GreatPersonClassType="GREAT_PERSON_CLASS_GENERAL" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_FOUNTAIN" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_FOUNTAIN" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="1"/>
+
+		<Row BuildingType="BUILDING_SKYSCRAPER" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_SKYSCRAPER" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_CASINO" GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_CINEMA" GreatPersonClassType="GREAT_PERSON_CLASS_WRITER" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_RESTAURANT" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_LIFE_AQUATIC" GreatPersonClassType="GREAT_PERSON_CLASS_GENERAL" PointsPerTurn="1"/>
+
+		<Row BuildingType="BUILDING_HEROIC_EPIC" GreatPersonClassType="GREAT_PERSON_CLASS_GENERAL" PointsPerTurn="2"/>
+		<Row BuildingType="BUILDING_CENTRAL_BANK" GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT" PointsPerTurn="2"/>
+		<Row BuildingType="BUILDING_STEELWORKS" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_LIBRARY" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
+		<Row BuildingType="BUILDING_NATIONAL_LIBRARY" GreatPersonClassType="GREAT_PERSON_CLASS_WRITER" PointsPerTurn="2"/>
+	</Building_GreatPersonPoints>
+	<Building_GreatWorks>
+		<Row BuildingType="BUILDING_HEROIC_EPIC" GreatWorkSlotType="GREATWORKSLOT_WRITING" NumSlots="2" />
+		<Row BuildingType="BUILDING_HEROIC_EPIC" GreatWorkSlotType="GREATWORKSLOT_RELIC" NumSlots="1" />
+
+		<Row BuildingType="BUILDING_NATIONAL_LIBRARY" GreatWorkSlotType="GREATWORKSLOT_WRITING" NumSlots="4" ThemingUniquePerson="true" ThemingYieldMultiplier="200" ThemingTourismMultiplier="50" NonUniquePersonYield="1" NonUniquePersonTourism="1" ThemingBonusDescription="SSGB_LOC_BUILDING_THEMINGBONUZ"/>
+	</Building_GreatWorks>
+
+	<Building_YieldDistrictCopies>
+		<Row BuildingType="BUILDING_POST_OFFICE" OldYieldType="YIELD_SCIENCE" NewYieldType="YIELD_CULTURE"/>
+	</Building_YieldDistrictCopies>
+
+	<!-- M O D I F I E R    S E C T I O N-->>
+	<BuildingModifiers>
+		<Row BuildingType="BUILDING_STATUE" ModifierId="SSGB_STATUE_LOYALTY"/>
+		<Row BuildingType="BUILDING_STATUE" ModifierId="SSGB_STATUE_AT_FULL_LOYALTY"/>
+		<Row BuildingType="BUILDING_COURTHOUSE" ModifierId="SSGB_COURTHOUSE_LOYALTY"/>
+		<Row BuildingType="BUILDING_COURTHOUSE" ModifierId="SSGB_COURTHOUSE_AT_FULL_LOYALTY"/>
+		
+		<Row BuildingType="BUILDING_GARDEN" ModifierId="SSGB_GARDEN_GREAT_PERSON_POINT_BONUS"/>		
+		<Row BuildingType="BUILDING_WTF" ModifierId="SSGB_WTF_FOOD_PER_POPULATION"/>
+		<Row BuildingType="BUILDING_AQUACULTURE_FARM" ModifierId="SSGB_AQUA_FARM_GOLD"/>
+		<Row BuildingType="BUILDING_TVA" ModifierId="SSGB_TVA_FREE_POWER"/>
+		<Row BuildingType="BUILDING_TVA" ModifierId="SSGB_GRANT_BONUS_OIL_PER_TURN"/>
+		<Row BuildingType="BUILDING_TVA" ModifierId="SSGB_GRANT_BONUS_ALUMINUM_PER_TURN"/>
+		<Row BuildingType="BUILDING_TVA" ModifierId="SSGB_GRANT_BONUS_URANIUM_PER_TURN"/>
+		<Row BuildingType="BUILDING_WAREHOUSE" ModifierId="SSGB_WAREHOUSE_ADJUST_RESOURCE_CAP"/>
+		<Row BuildingType="BUILDING_AMUSEMENT_PARK" ModifierId="SSGB_AMUSE_BUILDING_TOURISM"/>
+		<Row BuildingType="BUILDING_AMUSEMENT_PARK" ModifierId="GREATPERSON_DISTRICT_GOLD_ADJACENCY_AS_TOURISM"/>
+
+		<Row BuildingType="BUILDING_HIGHWAY" ModifierId="SSGB_HIGHWAY_TRADE_ROUTE_CAPACITY"/>
+		<Row BuildingType="BUILDING_HIGHWAY" ModifierId="SSGB_HIGHWAY_HALF_GOLD_FROM_UNIT_PRODUCTION"/>
+		<Row BuildingType="BUILDING_MASS_TRANSIT" ModifierId="SSGB_TRANSIT_CARBON"/>
+		<Row BuildingType="BUILDING_MASS_TRANSIT" ModifierId="SSGB_TRANSIT_FREE_POWER"/>
+		<Row BuildingType="BUILDING_MASS_TRANSIT" ModifierId="SSGB_GRANT_BONUS_OIL_PER_TURN"/>
+
+		<Row BuildingType="BUILDING_PRISON" ModifierId="PYRAMID_GRANT_BUILDERS" />
+		<Row BuildingType="BUILDING_HOTEL" ModifierId="SSGB_HOTEL_2X_ARTIFACT_TOURISM"/>
+		<Row BuildingType="BUILDING_HOTEL" ModifierId="SSGB_HOTEL_2X_SCULPTURE_TOURISM"/>
+		<Row BuildingType="BUILDING_HOTEL" ModifierId="SSGB_HOTEL_2X_PORTRAIT_TOURISM"/>
+		<Row BuildingType="BUILDING_HOTEL" ModifierId="SSGB_HOTEL_2X_LANDSCAPE_TOURISM"/>
+
+		<Row BuildingType="BUILDING_IRONWORKS" ModifierId="SSGB_GRANT_BONUS_IRON_PER_TURN"/>
+		<Row BuildingType="BUILDING_STEELWORKS" ModifierId="SSGB_STEELWORKS_PRODUCTION_PER_POPULATION"/>
+		<Row BuildingType="BUILDING_HEROIC_EPIC" ModifierId="SSGB_GREATWORK_YIELD"/>
+		<Row BuildingType="BUILDING_HEROIC_EPIC" ModifierId="SSGB_GREATWORK_IDENTITY"/>
+
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" ModifierId="SSGB_GRANT_BONUS_IRON_PER_TURN"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" ModifierId="SSGB_YIELD_POPULATION"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" ModifierId="SSGB_LOYALTY"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" ModifierId="SSGB_GRANT_BONUS_OIL_PER_TURN"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" ModifierId="SSGB_GRANT_BONUS_URANIUM_PER_TURN"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" ModifierId="SSGB_AMENITIY"/>
+		<Row BuildingType="BUILDING_NATIONAL_SPACEPORT" ModifierId="SSGB_NATIONAL_CAMPUS_SCIENCE_PER_POPULATION"/>
+	</BuildingModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>SSGB_GREATWORK_YIELD</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_GREATWORK_YIELD</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GREATWORK_IDENTITY</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN_FROM_NEARBY_GREAT_WORKS</ModifierType>
+		</Row>
+		
+		<Row>
+			<ModifierId>SSGB_STATUE_LOYALTY</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STATUE_AT_FULL_LOYALTY</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE</ModifierType>
+			<SubjectRequirementSetId>SSGB_CITY_AT_FULL_LOYALTY_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_COURTHOUSE_LOYALTY</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_COURTHOUSE_AT_FULL_LOYALTY</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE</ModifierType>
+			<SubjectRequirementSetId>SSGB_CITY_AT_FULL_LOYALTY_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GARDEN_GREAT_PERSON_POINT_BONUS</ModifierId>
+			<ModifierType>MODIFIER_CITY_INCREASE_GREAT_PERSON_POINT_BONUS</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_WTF_FOOD_PER_POPULATION</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TVA_FREE_POWER</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_POWER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_AQUA_FARM_GOLD</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>REQUIREMENTS_PLOT_HAS_FARM</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STEELWORKS_PRODUCTION_PER_POPULATION</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_NATIONAL_CAMPUS_SCIENCE_PER_POPULATION</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_WAREHOUSE_ADJUST_RESOURCE_CAP</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_RESOURCE_STOCKPILE_CAP</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_AMUSE_BUILDING_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICT_ADJUST_TOURISM_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HIGHWAY_TRADE_ROUTE_CAPACITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HIGHWAY_HALF_GOLD_FROM_UNIT_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_YIELD_PER_UNIT_COST</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TRANSIT_CARBON</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_SEQUESTERED_CARBON</ModifierType>
+			<Permanent>true</Permanent>
+			<Repeatable>true</Repeatable>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TRANSIT_FREE_POWER</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_POWER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_ARTIFACT_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_TOURISM</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_SCULPTURE_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_TOURISM</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_PORTRAIT_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_TOURISM</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_LANDSCAPE_TOURISM</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_TOURISM</ModifierType>
+		</Row>
+
+		
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_IRON_PER_TURN</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_OIL_PER_TURN</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_ALUMINUM_PER_TURN</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_URANIUM_PER_TURN</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_YIELD_POPULATION</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_PER_POPULATION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_AMENITIY</ModifierId>
+			<ModifierType>MODIFIER_ADJUST_AMENITIES_IN_DISTRICT</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_LOYALTY</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>SSGB_GREATWORK_YIELD</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_HERO</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GREATWORK_YIELD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GREATWORK_YIELD</ModifierId>
+			<Name>YieldChange</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GREATWORK_IDENTITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GREATWORK_IDENTITY</ModifierId>
+			<Name>ForeignCities</Name>
+			<Value>true</Value>
+		</Row>
+		
+		<Row>
+			<ModifierId>SSGB_STATUE_LOYALTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STATUE_AT_FULL_LOYALTY</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STATUE_AT_FULL_LOYALTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_COURTHOUSE_LOYALTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_COURTHOUSE_AT_FULL_LOYALTY</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_COURTHOUSE_AT_FULL_LOYALTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GARDEN_GREAT_PERSON_POINT_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TVA_FREE_POWER</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TVA_FREE_POWER</ModifierId>
+			<Name>SourceType</Name>
+			<Value>FREE_POWER_SOURCE_MISC</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_WTF_FOOD_PER_POPULATION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_WTF_FOOD_PER_POPULATION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1.5</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STEELWORKS_PRODUCTION_PER_POPULATION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_STEELWORKS_PRODUCTION_PER_POPULATION</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_NATIONAL_CAMPUS_SCIENCE_PER_POPULATION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_NATIONAL_CAMPUS_SCIENCE_PER_POPULATION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1.3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_AQUA_FARM_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_AQUA_FARM_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_WAREHOUSE_ADJUST_RESOURCE_CAP</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_AMUSE_BUILDING_TOURISM</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HIGHWAY_TRADE_ROUTE_CAPACITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HIGHWAY_HALF_GOLD_FROM_UNIT_PRODUCTION</ModifierId>
+			<Name>UnitProductionPercent</Name>
+			<Value>50</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HIGHWAY_HALF_GOLD_FROM_UNIT_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TRANSIT_CARBON</ModifierId>
+			<Name>Amount</Name>
+			<Value>300000</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TRANSIT_FREE_POWER</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_TRANSIT_FREE_POWER</ModifierId>
+			<Name>SourceType</Name>
+			<Value>FREE_POWER_SOURCE_MISC</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_ARTIFACT_TOURISM</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_ARTIFACT</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_ARTIFACT_TOURISM</ModifierId>
+			<Name>ScalingFactor</Name>
+			<Value>200</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_SCULPTURE_TOURISM</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_SCULPTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_SCULPTURE_TOURISM</ModifierId>
+			<Name>ScalingFactor</Name>
+			<Value>200</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_PORTRAIT_TOURISM</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_PORTRAIT</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_PORTRAIT_TOURISM</ModifierId>
+			<Name>ScalingFactor</Name>
+			<Value>200</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_LANDSCAPE_TOURISM</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_LANDSCAPE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_HOTEL_2X_LANDSCAPE_TOURISM</ModifierId>
+			<Name>ScalingFactor</Name>
+			<Value>200</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_IRON_PER_TURN</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_IRON</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_IRON_PER_TURN</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_OIL_PER_TURN</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_OIL</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_OIL_PER_TURN</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_ALUMINUM_PER_TURN</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_ALUMINUM</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_ALUMINUM_PER_TURN</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_URANIUM_PER_TURN</ModifierId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_URANIUM</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_GRANT_BONUS_URANIUM_PER_TURN</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_YIELD_POPULATION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_YIELD_POPULATION</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.5</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_AMENITIY</ModifierId>
+			<Name>Amount</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_LOYALTY</ModifierId>
+			<Name>Amount</Name>
+			<Value>-10</Value>
+		</Row>
+	</ModifierArguments>
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>SSGB_CITY_AT_FULL_LOYALTY_REQUIREMENTS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>SSGB_CITY_AT_FULL_LOYALTY_REQUIREMENTS</RequirementSetId>
+			<RequirementId>REQUIRES_FULL_LOYALTY</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+</GameData>

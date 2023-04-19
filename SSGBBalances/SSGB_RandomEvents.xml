@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGB_RandomEvents -->
+<!-- Author: michael -->
+<!-- DateCreated: 4/11/2023 9:00:47 PM -->
+<GameData>
+	<RandomEvents>
+
+		<Row RandomEventType="RANDOM_EVENT_FLOOD_MAJOR" Name="LOC_RANDOM_EVENT_FLOOD_MAJOR_NAME" Description="LOC_RANDOM_EVENT_FLOOD_MAJOR_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_ALL_DAMAGE_FERTILITY" EffectOperatorType="FLOODPLAIN" Severity="1" ChanceIncreasePerDegree="20" MitigatedYieldReduction="50" IconLarge="ClimateEvent_Flood" IconSmall="ClimateEventStat_Flooding"/>
+		<Row RandomEventType="RANDOM_EVENT_BLIZZARD_SIGNIFICANT" Name="LOC_RANDOM_EVENT_BLIZZARD_SIGNIFICANT_NAME" Description="LOC_RANDOM_EVENT_BLIZZARD_SIGNIFICANT_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_PROP_DAMAGE_NO_FERTILITY" EffectOperatorType="STORM" Severity="1" ChanceIncreasePerDegree="0" Hexes="7" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_Blizzard" IconSmall="ClimateEventStat_Blizzard"/>
+		<Row RandomEventType="RANDOM_EVENT_BLIZZARD_CRIPPLING" Name="LOC_RANDOM_EVENT_BLIZZARD_CRIPPLING_NAME" Description="LOC_RANDOM_EVENT_BLIZZARD_CRIPPLING_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_ALL_DAMAGE_NO_FERTILITY" EffectOperatorType="STORM" Severity="2" ChanceIncreasePerDegree="50" Hexes="19" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_Blizzard" IconSmall="ClimateEventStat_Blizzard"/>
+		<Row RandomEventType="RANDOM_EVENT_DUST_STORM_GRADIENT" Name="LOC_RANDOM_EVENT_DUST_STORM_GRADIENT_NAME" Description="LOC_RANDOM_EVENT_DUST_STORM_GRADIENT_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_PROP_DAMAGE_FERTILITY" EffectOperatorType="STORM" Severity="1" ChanceIncreasePerDegree="0" Hexes="3" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_DustStorm" IconSmall="ClimateEventStat_DustStorm"/>
+		<Row RandomEventType="RANDOM_EVENT_DUST_STORM_HABOOB" Name="LOC_RANDOM_EVENT_DUST_STORM_HABOOB_NAME" Description="LOC_RANDOM_EVENT_DUST_STORM_HABOOB_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_ALL_DAMAGE_FERTILITY" EffectOperatorType="STORM" Severity="2" ChanceIncreasePerDegree="50" Hexes="7" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_DustStorm" IconSmall="ClimateEventStat_DustStorm"/>
+		<Row RandomEventType="RANDOM_EVENT_TORNADO_FAMILY" Name="LOC_RANDOM_EVENT_TORNADO_FAMILY_NAME" Description="LOC_RANDOM_EVENT_TORNADO_FAMILY_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_PROP_DAMAGE_NO_FERTILITY" EffectOperatorType="STORM" Severity="1" ChanceIncreasePerDegree="0" Hexes="1" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_Tornado" IconSmall="ClimateEventStat_Tornado"/>
+		<Row RandomEventType="RANDOM_EVENT_TORNADO_OUTBREAK" Name="LOC_RANDOM_EVENT_TORNADO_OUTBREAK_NAME" Description="LOC_RANDOM_EVENT_TORNADO_OUTBREAK_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_ALL_DAMAGE_NO_FERTILITY" EffectOperatorType="STORM" Severity="2" ChanceIncreasePerDegree="50" Hexes="3" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_Tornado" IconSmall="ClimateEventStat_Tornado"/>
+		<Row RandomEventType="RANDOM_EVENT_HURRICANE_CAT_4" Name="LOC_RANDOM_EVENT_HURRICANE_CAT_4_NAME" Description="LOC_RANDOM_EVENT_HURRICANE_CAT_4_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_PROP_NAVAL_DAMAGE_FERTILITY" EffectOperatorType="STORM" Severity="1" ChanceIncreasePerDegree="0" Hexes="7" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_Hurricane" IconSmall="ClimateEventStat_Storms"/>
+		<Row RandomEventType="RANDOM_EVENT_HURRICANE_CAT_5" Name="LOC_RANDOM_EVENT_HURRICANE_CAT_5_NAME" Description="LOC_RANDOM_EVENT_HURRICANE_CAT_5_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_ALL_DAMAGE_FERTILITY" EffectOperatorType="STORM" Severity="2" ChanceIncreasePerDegree="50" Hexes="19" Movement="8" Duration="3" Spacing="15" IconLarge="ClimateEvent_Hurricane" IconSmall="ClimateEventStat_Storms"/>
+		<Row RandomEventType="RANDOM_EVENT_NUCLEAR_ACCIDENT_MINOR" Name="LOC_RANDOM_EVENT_NUCLEAR_ACCIDENT_MINOR_NAME" Description="LOC_RANDOM_EVENT_NUCLEAR_ACCIDENT_MINOR_DESCRIPTION" EffectOperatorType="NUCLEAR_ACCIDENT" Severity="0" MinTurnAtRisk="10" IconLarge="ICON_NOTIFICATION_NUCLEAR_ACCIDENT_SEV0" IconSmall="ICON_NOTIFICATION_NUCLEAR_ACCIDENT_SEV0"/>
+		<Row RandomEventType="RANDOM_EVENT_NUCLEAR_ACCIDENT_MAJOR" Name="LOC_RANDOM_EVENT_NUCLEAR_ACCIDENT_MAJOR_NAME" Description="LOC_RANDOM_EVENT_NUCLEAR_ACCIDENT_MAJOR_DESCRIPTION" EffectOperatorType="NUCLEAR_ACCIDENT" Severity="1" MinTurnAtRisk="20" IconLarge="ICON_NOTIFICATION_NUCLEAR_ACCIDENT_SEV1" IconSmall="ICON_NOTIFICATION_NUCLEAR_ACCIDENT_SEV1"/>
+		<Row RandomEventType="RANDOM_EVENT_NUCLEAR_ACCIDENT_CATASTROPHIC" Name="LOC_RANDOM_EVENT_NUCLEAR_ACCIDENT_CATASTROPHIC_NAME" Description="LOC_RANDOM_EVENT_NUCLEAR_ACCIDENT_CATASTROPHIC_DESCRIPTION" EffectOperatorType="NUCLEAR_ACCIDENT" Severity="2" MinTurnAtRisk="30" IconLarge="ICON_NOTIFICATION_NUCLEAR_ACCIDENT_SEV2" IconSmall="ICON_NOTIFICATION_NUCLEAR_ACCIDENT_SEV2"/>
+		<Row RandomEventType="RANDOM_EVENT_DROUGHT_MAJOR" Name="LOC_RANDOM_EVENT_DROUGHT_MAJOR_NAME" Description="LOC_RANDOM_EVENT_DROUGHT_MAJOR_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_DROUGHT_DAMAGE" EffectOperatorType="DROUGHT" Severity="0" ChanceIncreasePerDegree="0" Hexes="7" Duration="5" Spacing="15" IconLarge="ClimateEvent_Drought" IconSmall="ClimateEventStat_Drought"/>
+		<Row RandomEventType="RANDOM_EVENT_DROUGHT_EXTREME" Name="LOC_RANDOM_EVENT_DROUGHT_EXTREME_NAME" Description="LOC_RANDOM_EVENT_DROUGHT_EXTREME_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_DROUGHT_DAMAGE" EffectOperatorType="DROUGHT" Severity="1" ChanceIncreasePerDegree="50" Hexes="7" Duration="10" Spacing="15" IconLarge="ClimateEvent_Drought" IconSmall="ClimateEventStat_Drought"/>
+
+		<Update>
+			<Where BuildingType="RANDOM_EVENT_HURRICANE_CAT_4"/>
+			<Set>
+				<Hexes>37</Hexes>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="RANDOM_EVENT_HURRICANE_CAT_5"/>
+			<Set>
+				<Hexes>61</Hexes>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="RANDOM_EVENT_DROUGHT_MAJOR"/>
+			<Set>
+				<Hexes>37</Hexes>
+			</Set>
+		</Update>
+		<Update>
+			<Where BuildingType="RANDOM_EVENT_DROUGHT_EXTREME"/>
+			<Set>
+				<Hexes>61</Hexes>
+			</Set>
+		</Update>
+	</RandomEvents>
+
+	<RandomEvent_Damages>
+	
+	</RandomEvent_Damages>
+
+</GameData>

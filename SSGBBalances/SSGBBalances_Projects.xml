@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGBBalances_Projects -->
+<!-- Author: michael -->
+<!-- DateCreated: 10/11/2022 12:44:58 PM -->
+<GameData>
+
+	<!-- TESTING IF FUNCTIONAL 
+	<Buildings>
+		<Update>
+			<Where BuildingType="BUILDING_STATUE"/>
+			<Set>
+				<Cost>10</Cost>
+			</Set>
+		</Update>
+		
+		<Row ProjectType="PROJECT_KILLTAX" UnlocksFromEffect="true"/>
+		
+			CREATE TABLE "Projects" (
+					"ProjectType" TEXT NOT NULL,
+					"Name" TEXT NOT NULL,
+					"ShortName" TEXT NOT NULL,
+					"Description" TEXT,
+					"PopupText" TEXT,
+					"Cost" INTEGER NOT NULL,
+					"CostProgressionModel" TEXT NOT NULL DEFAULT "NO_PROGRESSION_MODEL",
+					"CostProgressionParam1" INTEGER NOT NULL DEFAULT 0,
+					"PrereqTech" TEXT,
+					"PrereqCivic" TEXT,
+					"PrereqDistrict" TEXT,
+					"RequiredBuilding" TEXT,
+					"VisualBuildingType" TEXT,
+					"SpaceRace" BOOLEAN NOT NULL CHECK (SpaceRace IN (0,1)) DEFAULT 0,
+					"OuterDefenseRepair" BOOLEAN NOT NULL CHECK (OuterDefenseRepair IN (0,1)) DEFAULT 0,
+					"MaxPlayerInstances" INTEGER,
+					"AmenitiesWhileActive" INTEGER,
+					"PrereqResource" TEXT,
+					"AdvisorType" TEXT,
+					"WMD" BOOLEAN NOT NULL CHECK (WMD IN (0,1)) DEFAULT 0,
+					"UnlocksFromEffect" BOOLEAN NOT NULL CHECK (UnlocksFromEffect IN (0,1)) DEFAULT 0,
+					PRIMARY KEY(ProjectType),
+					FOREIGN KEY (PrereqTech) REFERENCES Technologies(TechnologyType) ON DELETE SET DEFAULT ON UPDATE SET DEFAULT,
+					FOREIGN KEY (PrereqCivic) REFERENCES Civics(CivicType) ON DELETE SET DEFAULT ON UPDATE SET DEFAULT,
+					FOREIGN KEY (PrereqDistrict) REFERENCES Districts(DistrictType) ON DELETE SET DEFAULT ON UPDATE SET DEFAULT,
+					FOREIGN KEY (VisualBuildingType) REFERENCES Buildings(BuildingType) ON DELETE SET DEFAULT ON UPDATE SET DEFAULT,
+					FOREIGN KEY (PrereqResource) REFERENCES Resources(ResourceType) ON DELETE SET DEFAULT ON UPDATE SET DEFAULT,
+					FOREIGN KEY (ProjectType) REFERENCES Types(Type) ON DELETE CASCADE ON UPDATE CASCADE,
+					FOREIGN KEY (RequiredBuilding) REFERENCES Buildings(BuildingType) ON DELETE CASCADE ON UPDATE CASCADE)
+					
+					
+					let's see. so making the science victory non-linear is a bit of a challenge because PrereqProjects is an AND operation, whereas PrereqBuildings for buildings is an OR operation.
+					But I think there is a way to make a building a prereq for a science project, then consume the building for the project, but make the path to create the building non-linear
+		
+	</Buildings>
+	-->
+	
+	<Types>
+		<Row Type="PROJECT_IRON" Kind="KIND_PROJECT"/>
+		<Row Type="PROJECT_HORSES" Kind="KIND_PROJECT"/>
+		<Row Type="PROJECT_NITER" Kind="KIND_PROJECT"/>
+		<Row Type="PROJECT_COAL" Kind="KIND_PROJECT"/>
+		<Row Type="PROJECT_OIL" Kind="KIND_PROJECT"/>
+		
+		<Row Type="PROJECT_QE" Kind="KIND_PROJECT"/>
+	</Types>
+	<Projects>
+		<Row ProjectType="PROJECT_IRON" Name="PROJECT_IRON" ShortName="Placeholder" Description="Placeholder" PrereqDistrict="DISTRICT_INDUSTRIAL_ZONE" Cost="50" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1000" RequiredBuilding="BUILDING_IRONWORKS"  />
+		<Row ProjectType="PROJECT_HORSES" Name="PROJECT_HORSES" ShortName="Placeholder" Description="Placeholder" Cost="5" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1000" AmenitiesWhileActive="2" SpaceRace="true" maxPlayerInstances="1"/>
+		<Row ProjectType="PROJECT_NITER" Name="PROJECT_NITER" ShortName="Placeholder" Description="Placeholder" PrereqDistrict="DISTRICT_NEIGHBORHOOD" Cost="50" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1000" AmenitiesWhileActive="2"/>
+		<Row ProjectType="PROJECT_COAL" Name="PROJECT_COAL" ShortName="Placeholder" Description="Placeholder" PrereqDistrict="DISTRICT_INDUSTRIAL_ZONE" RequiredBuilding="BUILDING_IRONWORKS" Cost="50" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1000"/>
+		<Row ProjectType="PROJECT_OIL" Name="PROJECT_OIL" ShortName="Placeholder" Description="Placeholder" PrereqDistrict="DISTRICT_AERODROME" Cost="140" AdvisorType="ADVISOR_GENERIC" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="400" />
+
+		<Row ProjectType="PROJECT_QE" Name="PROJECT_QE" ShortName="Placeholder" Description="Placeholder" PrereqDistrict="DISTRICT_COMMERCIAL_HUB" RequiredBuilding="BUILDING_CENTRAL_BANK" Cost="30" AdvisorType="ADVISOR_GENERIC" CostProgressionParam1="1200"/>
+	</Projects>
+	
+	<Projects_XP1>
+		<Row ProjectType="PROJECT_HORSES" IdentityPerCitizenChange="3.0"/>
+	</Projects_XP1>
+	<Projects_XP2>
+		<Row ProjectType="PROJECT_QE" ReligiousPressureModifier="300" FullyPoweredWhileActive="true"/>
+	</Projects_XP2>
+	<Project_ResourceCosts>
+		<Row ProjectType="PROJECT_IRON" ResourceType="RESOURCE_IRON" StartProductionCost="30"/>
+		<Row ProjectType="PROJECT_NITER" ResourceType="RESOURCE_NITER" StartProductionCost="30"/>
+		<Row ProjectType="PROJECT_COAL" ResourceType="RESOURCE_IRON" StartProductionCost="20"/>
+		<Row ProjectType="PROJECT_COAL" ResourceType="RESOURCE_COAL" StartProductionCost="20"/>
+
+		<Row ProjectType="PROJECT_OIL" ResourceType="RESOURCE_OIL" StartProductionCost="50" MaxSimultaneousInstances="3"/>
+		<Row ProjectType="PROJECT_QE" RequiredPowerWhileActive="6" MaxSimultaneousInstances="1"/>
+	</Project_ResourceCosts>
+	<Project_YieldConversions>
+		<Row ProjectType="PROJECT_HORSES" YieldType="YIELD_GOLD" PercentOfProductionRate="200"/>
+		<Row ProjectType="PROJECT_IRON" YieldType="YIELD_GOLD" PercentOfProductionRate="50"/>
+		<Row ProjectType="PROJECT_NITER" YieldType="YIELD_GOLD" PercentOfProductionRate="50"/>
+		<Row ProjectType="PROJECT_COAL" YieldType="YIELD_GOLD" PercentOfProductionRate="20"/>
+		<Row ProjectType="PROJECT_OIL" YieldType="YIELD_SCIENCE" PercentOfProductionRate="200"/>
+	</Project_YieldConversions>
+	
+	<Project_GreatPersonPoints>
+		<Row ProjectType="PROJECT_OIL" YieldType="GREAT_PERSON_CLASS_SCIENTIST" PercentOfProductionRate="60"/>
+
+		<Row ProjectType="PROJECT_COAL" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" Points="50" PointProgressionModel="COST_PROGRESSION_GAME_PROGRESS" PointProgressionParam1="800"/>
+		<Row ProjectType="PROJECT_COAL" GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT" Points="50" PointProgressionModel="COST_PROGRESSION_GAME_PROGRESS" PointProgressionParam1="800"/>
+	</Project_GreatPersonPoints>
+	
+	<ProjectCompletionModifiers>
+		<Row ProjectType="PROJECT_HORSES" ModifierId="SSGB_PROJECT_COMPLETION_SCIENCE_VP"/>
+
+		<Row ProjectType="PROJECT_COAL" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE"/>
+		<Row ProjectType="PROJECT_OIL" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE"/>
+		<Row ProjectType="PROJECT_QE" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_FAITH_RATE"/>
+	</ProjectCompletionModifiers>
+	
+	<Modifiers>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_SCIENCE_BASED_ON_GOLD_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_YIELD_BASED_ON_CURRENT_YIELD_RATE</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_YIELD_BASED_ON_CURRENT_YIELD_RATE</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_FAITH_RATE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_YIELD_BASED_ON_CURRENT_YIELD_RATE</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_SCIENCE_VP</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_SCIENCE_VICTORY_POINTS_PER_TURN</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_SCIENCE_VP</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_SCIENCE_BASED_ON_GOLD_RATE</ModifierId>
+			<Name>YieldToGrant</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_SCIENCE_BASED_ON_GOLD_RATE</ModifierId>
+			<Name>YieldToBaseOn</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_SCIENCE_BASED_ON_GOLD_RATE</ModifierId>
+			<Name>Multiplier</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE</ModifierId>
+			<Name>YieldToGrant</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE</ModifierId>
+			<Name>YieldToBaseOn</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE</ModifierId>
+			<Name>Multiplier</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_FAITH_RATE</ModifierId>
+			<Name>YieldToGrant</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_FAITH_RATE</ModifierId>
+			<Name>YieldToBaseOn</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_FAITH_RATE</ModifierId>
+			<Name>Multiplier</Name>
+			<Value>3</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>
+
+

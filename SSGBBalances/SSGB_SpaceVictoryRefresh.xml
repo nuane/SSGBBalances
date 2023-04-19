@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGB_SpaceVictoryRefresh -->
+<!-- Author: michael -->
+<!-- DateCreated: 4/8/2023 12:27:59 AM -->
+
+<GameData>
+	
+
+	<Types>
+		<Row Type="BUILDING_NATIONAL_SCIENCE_A" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_SCIENCE_B" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_SCIENCE_C" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_SCIENCE_D" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_SCIENCE_E" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_CULTURE" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_CONQUEST" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_RELIGIOUS" Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_NATIONAL_DIPLO" Kind="KIND_BUILDING"/>
+
+	</Types>
+	<Buildings>
+		<Row BuildingType="BUILDING_NATIONAL_SCIENCE_A" Name="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_A_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_A_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="5000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_SCIENCE_B" Name="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_B_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_B_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="5000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_SCIENCE_C" Name="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_C_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_C_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="5000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_SCIENCE_D" Name="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_D_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_D_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="5000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_SCIENCE_E" Name="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_E_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_SCIENCE_E_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="5000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_CULTURE" Name="SSGB_LOC_BUILDING_NATIONAL_CULTURE_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_CULTURE_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="10000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_CONQUEST" Name="SSGB_LOC_BUILDING_NATIONAL_CONQUEST_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_CONQUEST_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="10000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_RELIGIOUS" Name="SSGB_LOC_BUILDING_NATIONAL_RELIGIOUS_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_RELIGIOUS_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="10000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+		<Row BuildingType="BUILDING_NATIONAL_DIPLO" Name="SSGB_LOC_BUILDING_NATIONAL_DIPLO_NAME" Description="SSGB_LOC_BUILDING_NATIONAL_DIPLO_DESCRIPTION" PrereqTech="TECH_ROCKETRY" PrereqDistrict="DISTRICT_AERODROME" Cost="10000" PurchaseYield="YIELD_FAITH" AdvisorType="ADVISOR_CULTURE" CitizenSlots="6" RegionalRange="9" MaxPlayerInstances="1" MaxWorldInstances="2"/>
+	</Buildings>
+
+	<Projects>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_EARTH_SATELLITE"/>
+			<Set>
+				<Name>Establish Lunar and Low-Earth Orbit Network</Name>
+				<Cost>1</Cost>
+				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
+				<PrereqTech>TECH_WRITING</PrereqTech>
+				<RequiredBuilding>BUILDING_MONUMENT</RequiredBuilding>
+			</Set>
+		</Update>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_MOON_LANDING"/>
+			<Set>
+				<Name>Venetian and Martian Exploration, Expansion, Extraction, and Experimentation</Name>
+				<Cost>1</Cost>
+				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
+				<PrereqTech>TECH_WRITING</PrereqTech>
+				<RequiredBuilding>BUILDING_LIBRARY</RequiredBuilding>
+			</Set>
+		</Update>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_MARS_BASE"/>
+			<Set>
+				<Name>Colonize Venetian and Martian Enviroments</Name>
+				<Cost>1</Cost>
+				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
+				<PrereqTech>TECH_WRITING</PrereqTech>
+			</Set>
+		</Update>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_EXOPLANET_EXPEDITION"/>
+			<Set>
+				<Name>Launch Exoplanet Ark Humanity Extension Project</Name>
+				<Cost>1</Cost>
+				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
+				<PrereqTech>TECH_WRITING</PrereqTech>
+			</Set>
+		</Update>
+	</Projects>
+
+	<ProjectPrereqs>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_EARTH_SATELLITE"/>
+			<Set>
+				<PrereqProjectType>PROJECT_HORSES</PrereqProjectType>
+			</Set>
+		</Update>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_MOON_LANDING"/>
+			<Set>
+				<PrereqProjectType>PROJECT_HORSES</PrereqProjectType>
+			</Set>
+		</Update>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_MARS_BASE"/>
+			<Set>
+				<PrereqProjectType>PROJECT_HORSES</PrereqProjectType>
+			</Set>
+		</Update>
+		<Update>
+			<Where ProjectType="PROJECT_LAUNCH_EXOPLANET_EXPEDITION"/>
+			<Set>
+				<PrereqProjectType>PROJECT_HORSES</PrereqProjectType>
+			</Set>
+		</Update>
+	</ProjectPrereqs>
+
+
+	<ProjectCompletionModifiers>
+		<Row ProjectType="PROJECT_HORSES" ModifierId="SSGB_PROJECT_COMPLETION_SCIENCE_VP"/>
+
+		<Row ProjectType="PROJECT_COAL" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE"/>
+		<Row ProjectType="PROJECT_OIL" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_CULTURE_RATE"/>
+		<Row ProjectType="PROJECT_QE" ModifierId="SSGB_PROJECT_COMPLETION_GRANT_GOLD_BASED_ON_FAITH_RATE"/>
+	</ProjectCompletionModifiers>
+
+</GameData>

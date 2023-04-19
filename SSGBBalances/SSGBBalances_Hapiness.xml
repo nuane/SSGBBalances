@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameInfo1 -->
+<!-- Author: michael -->
+<!-- DateCreated: 9/9/2022 
+
+
+	<Happinesses>
+		<Update>
+			<Where HappinessType="HAPPINESS_ECSTATIC" >
+				<Set>
+					<MaximumAmenityScore>9</MaximumAmenityScore>
+				</Set>
+			</Where>
+		</Update>
+	</Happinesses>
+
+
+
+1:19:42 AM -->
+<GameData>
+
+	<!-- Loyalty added to hapiness mechanic from R&F -->
+	<Happinesses_XP1>
+		<Update>
+			<Where HappinessType="HAPPINESS_REVOLT" >
+				<Set>
+					<IdentityPerTurnChange>-40</IdentityPerTurnChange>
+				</Set>
+			</Where>
+		</Update>
+		<Update>
+			<Where HappinessType="HAPPINESS_UNHAPPY" >
+				<Set>
+					<IdentityPerTurnChange>-15</IdentityPerTurnChange>
+				</Set>
+			</Where>
+		</Update>
+		<Update>
+			<Where HappinessType="HAPPINESS_DISPLEASED" >
+				<Set>
+					<IdentityPerTurnChange>-9</IdentityPerTurnChange>
+				</Set>
+			</Where>
+		</Update>
+	</Happinesses_XP1>
+</GameData>

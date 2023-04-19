@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SSGB Units -->
+<!-- Author: michael -->
+<!-- DateCreated: 9/14/2022 1:23:39 AM -->
+<GameInfo>
+	<Units>
+		<!--Settlers and builders are cheaper earlier and become progressively more expensive-->
+		<Update>
+			<Where UnitType="UNIT_SETTLER"/>
+			<Set>
+				<!--Cost: 80, CostProgressionParam1 30-->
+				<Cost>20</Cost>
+				<CostProgressionParam1>50</CostProgressionParam1>
+				<PopulationCost>2</PopulationCost>
+				<PrereqPopulation>3</PrereqPopulation>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BUILDER"/>
+			<Set>
+				<!--Cost: 50, CostProgressionParam1 4-->
+				<Cost>10</Cost>
+				<CostProgressionParam1>12</CostProgressionParam1>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_SCOUT"/>
+			<Set>
+				<!-- Cost: 30 -->
+				<BaseSightRange>3</BaseSightRange>
+				<Cost>45</Cost>
+				<!-- BaseMoves: 3 -->
+				<BaseMoves>4</BaseMoves>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_RANGER"/>
+			<Set>
+				<!-- BaseMoves: 3 -->
+				<BaseMoves>5</BaseMoves>
+				<Combat>60</Combat>
+			</Set>
+		</Update>
+	
+		<Update>
+			<Where UnitType="UNIT_MEDIC"/>
+			<Set>
+				<PrereqTech>TECH_EDUCATION</PrereqTech>
+				<Cost>170</Cost>
+				<Maintenance>3</Maintenance>
+			</Set>
+		</Update>
+		
+		<!-- M E L E E -->
+		<Update>
+			<Where UnitType="UNIT_WARRIOR"/>
+			<Set>
+				<!--cost: 40 -->
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>8</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_SWORDSMAN"/>
+			<Set>
+				<!--cost: 90 -->
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>18</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_MUSKETMAN"/>
+			<Set>
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>120</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<BuildCharges>1</BuildCharges>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_LINE_INFANTRY"/>
+			<Set>
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>180</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<BuildCharges>1</BuildCharges>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_INFANTRY"/>
+			<Set>
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>215</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<BuildCharges>1</BuildCharges>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_MECHANIZED_INFANTRY"/>
+			<Set>
+				<Cost>325</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<BuildCharges>2</BuildCharges>
+			</Set>
+		</Update>
+		
+		<!-- A N T I - C A L V A L R Y -->
+		<!-- -80% cost reduction.  Anti-calv units have a down-scaling factor based on base combat strength, incentivizing both upgrading units and sniping techs for unit upgrades -->
+		<Update>
+			<Where UnitType="UNIT_SPEARMAN"/>
+			<Set>
+				<!--Cost: 65, Combat 25-->
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>25</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<Description>SSGB_UNIT_SPEARMAN_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_PIKEMAN"/>
+			<Set>
+				<!--Cost: 200, Combat 45-->
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>80</Cost>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+			</Set>
+		</Update>
+		<!-- modern at units are similar to Roman Legions. They can repair improvements and destroy freatures. They can build forts and build farms -->
+		<Update>
+			<Where UnitType="UNIT_AT_CREW"/>
+			<Set>
+				<!--Cost: 400, Combat 75-->
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>160</Cost>
+				<RangedCombat>50</RangedCombat>
+				<Range>1</Range>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<BuildCharges>1</BuildCharges>
+				<Bombard>40</Bombard>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_MODERN_AT"/>
+			<Set>
+				<!--Cost: 580, Combat 85-->
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>240</Cost>
+				<Maintenance>3</Maintenance>
+				<RangedCombat>65</RangedCombat>
+				<Range>1</Range>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<BuildCharges>1</BuildCharges>
+				<Bombard>60</Bombard>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_JET_FIGHTER"/>
+			<Set>
+				<!-- BaseMoves: 3 -->
+				<BaseSightRange>7</BaseSightRange>
+			</Set>
+		</Update>
+		
+		<!--R&F units, TODO give conditional assignment-->
+		<Update>
+			<Where UnitType="UNIT_PIKE_AND_SHOT"/>
+			<Set>
+				<!--Cost: 250, Combat 55-->
+				<Name>Grenadier</Name>
+				<BaseSightRange>1</BaseSightRange>
+				<Cost>100</Cost>
+				<RangedCombat>35</RangedCombat>
+				<Range>1</Range>
+				<PopulationCost>1</PopulationCost>
+				<PrereqPopulation>2</PrereqPopulation>
+				<BuildCharges>1</BuildCharges>
+				<Bombard>25</Bombard>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_SKIRMISHER"/>
+			<Set>
+				<!-- BaseMoves: 3 -->
+				<BaseSightRange>3</BaseSightRange>
+				<BaseMoves>4</BaseMoves>
+				<Combat>35</Combat>
+				<RangedCombat>35</RangedCombat>
+			</Set>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_INCA_WARAKAQ"/>
+			<Set>
+				<!-- BaseMoves: 3 -->
+				<BaseSightRange>3</BaseSightRange>
+				<BaseMoves>5</BaseMoves>
+				<Combat>35</Combat>
+			</Set>
+		</Update>
+		<!--GS units, TODO give conditional assignment-->
+		<Update>
+			<Where UnitType="UNIT_SPEC_OPS"/>
+			<Set>
+				<!-- BaseMoves: 3 -->
+				<BaseSightRange>5</BaseSightRange>
+				<BaseMoves>5</BaseMoves>
+				<Combat>70</Combat>
+				<RangedCombat>70</RangedCombat>
+			</Set>
+		</Update>
+	</Units>
+	
+	<Improvement_ValidBuildUnits>
+		<Row ImprovementType="IMPROVEMENT_FARM" UnitType="UNIT_MUSKETMAN"/>
+
+		<Row ImprovementType="IMPROVEMENT_FARM" UnitType="UNIT_LINE_INFANTRY"/>
+		<Row ImprovementType="IMPROVEMENT_MINE" UnitType="UNIT_LINE_INFANTRY"/>
+
+		<Row ImprovementType="IMPROVEMENT_FARM" UnitType="UNIT_INFANTRY"/>
+		<Row ImprovementType="IMPROVEMENT_MINE" UnitType="UNIT_INFANTRY"/>
+
+		<Row ImprovementType="IMPROVEMENT_MINE" UnitType="UNIT_MECHANIZED_INFANTRY"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" UnitType="UNIT_MECHANIZED_INFANTRY"/>
+		<Row ImprovementType="IMPROVEMENT_SOLAR_FARM" UnitType="UNIT_MECHANIZED_INFANTRY"/>
+		<Row ImprovementType="IMPROVEMENT_WIND_FARM" UnitType="UNIT_MECHANIZED_INFANTRY"/>
+
+		<Row ImprovementType="IMPROVEMENT_FORT" UnitType="UNIT_PIKE_AND_SHOT"/>
+		<Row ImprovementType="IMPROVEMENT_FORT" UnitType="UNIT_AT_CREW"/>
+		<Row ImprovementType="IMPROVEMENT_FORT" UnitType="UNIT_MODERN_AT"/>
+		<Row ImprovementType="IMPROVEMENT_SOLAR_FARM" UnitType="UNIT_MODERN_AT"/>
+		<Row ImprovementType="IMPROVEMENT_WIND_FARM" UnitType="UNIT_MODERN_AT"/>
+
+		<Row ImprovementType="IMPROVEMENT_SOLAR_FARM" UnitType="UNIT_MILITARY_ENGINEER"/>
+		<Row ImprovementType="IMPROVEMENT_WIND_FARM" UnitType="UNIT_MILITARY_ENGINEER"/>
+		<Row ImprovementType="IMPROVEMENT_OFFSHORE_WIND_FARM" UnitType="UNIT_MILITARY_ENGINEER"/>
+		<Row ImprovementType="IMPROVEMENT_SEASTEAD" UnitType="UNIT_MILITARY_ENGINEER"/>
+	</Improvement_ValidBuildUnits>
+
+	<Route_ValidBuildUnits>
+		<Row RouteType="ROUTE_RAILROAD" UnitType="UNIT_INFANTRY"/>
+		<Row RouteType="ROUTE_RAILROAD" UnitType="UNIT_MECHANIZED_INFANTRY"/>
+		<Row RouteType="ROUTE_RAILROAD" UnitType="UNIT_MODERN_AT"/>
+	</Route_ValidBuildUnits>
+</GameInfo>
